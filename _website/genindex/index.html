@@ -1,0 +1,3557 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="#3f51b5">
+  <script src="../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>Index &#8212; PySCF  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/material.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="author" title="About these documents" href="../about/" />
+    <link rel="index" title="Index" href="#" />
+    <link rel="search" title="Search" href="../search/" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=indigo data-md-color-accent=blue>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#genindex" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../" title="PySCF  documentation"
+           class="md-header-nav__button md-logo">
+          
+            &nbsp;
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">PySCF Docs</span>
+          <span class="md-header-nav__topic"> Index </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../search/" method="GET" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder="Search"
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../" class="md-tabs__link">PySCF  documentation</a></li>
+            
+            <li class="md-tabs__item"><a href="../about/" class="md-tabs__link">About</a></li>
+            
+            <li class="md-tabs__item"><a href="../blog_wrapper/" class="md-tabs__link">Blog</a></li>
+            
+            <li class="md-tabs__item"><a href="../pyscf_api_docs/modules/" class="md-tabs__link">API Docs</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../" title="PySCF documentation" class="md-nav__button md-logo">
+      
+        <img src="../_static/" alt=" logo" width="48" height="48">
+      
+    </a>
+    <a href="../"
+       title="PySCF documentation">PySCF Docs</a>
+  </label>
+  
+
+  
+  <ul class="md-nav__list">
+    <li class="md-nav__item">
+    
+    
+      <a href="../about/" class="md-nav__link">About</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../blog_wrapper/" class="md-nav__link">Blog</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../pyscf_api_docs/pyscf/" class="md-nav__link">API Docs</a>
+      
+    
+    </li>
+  </ul>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+
+<li id="searchbox" class="md-nav__item"></li>
+
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+
+<h1 id="index">Index</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#A"><strong>A</strong></a>
+ | <a href="#B"><strong>B</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#H"><strong>H</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#J"><strong>J</strong></a>
+ | <a href="#K"><strong>K</strong></a>
+ | <a href="#L"><strong>L</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#N"><strong>N</strong></a>
+ | <a href="#O"><strong>O</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ | <a href="#U"><strong>U</strong></a>
+ | <a href="#V"><strong>V</strong></a>
+ | <a href="#W"><strong>W</strong></a>
+ | <a href="#X"><strong>X</strong></a>
+ 
+</div>
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.ab2full">ab2full() (in module pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.ab2mkk">ab2mkk() (in module pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.diis.ADIIS">ADIIS (class in pyscf.scf.diis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.diis.adiis_minimize">adiis_minimize() (in module pyscf.scf.diis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.ah_conv_tol">ah_conv_tol (pyscf.soscf.ciah.CIAHOptimizer attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.ah_level_shift">ah_level_shift (pyscf.soscf.ciah.CIAHOptimizer attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.ah_lindep">ah_lindep (pyscf.soscf.ciah.CIAHOptimizer attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.ah_max_cycle">ah_max_cycle (pyscf.soscf.ciah.CIAHOptimizer attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.ah_start_cycle">ah_start_cycle (pyscf.soscf.ciah.CIAHOptimizer attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.ah_start_tol">ah_start_tol (pyscf.soscf.ciah.CIAHOptimizer attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.ah_trust_region">ah_trust_region (pyscf.soscf.ciah.CIAHOptimizer attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.alias_axes">alias_axes() (in module pyscf.symm.geom)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.analyze">analyze() (in module pyscf.scf.dhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.analyze">(in module pyscf.scf.ghf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf_symm.analyze">(in module pyscf.scf.ghf_symm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.analyze">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.analyze">(in module pyscf.scf.hf_symm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.analyze">(in module pyscf.scf.rohf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.analyze">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.analyze">(in module pyscf.scf.uhf_symm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.analyze">(in module pyscf.tdscf.rhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.analyze">(in module pyscf.tdscf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.analyze">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.analyze">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf_symm.GHF.analyze">(pyscf.scf.ghf_symm.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.analyze">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedRHF.analyze">(pyscf.scf.hf_symm.SymAdaptedRHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.analyze">(pyscf.scf.hf_symm.SymAdaptedROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.analyze">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.analyze">(pyscf.scf.uhf.UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF.analyze">(pyscf.scf.uhf_symm.SymAdaptedUHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.analyze">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDA.analyze">(pyscf.tdscf.uhf.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF.analyze">(pyscf.x2c.x2c.X2C_UHF method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.analyze_wfnsym">analyze_wfnsym() (in module pyscf.tdscf.rhf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDBase.ao2mo">ao2mo() (pyscf.tdscf.common_slow.TDBase method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.proxy.TDProxy.ao2mo">(pyscf.tdscf.proxy.TDProxy method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf_slow.PhysERI.ao2mo">(pyscf.tdscf.rhf_slow.PhysERI method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf_slow.TDRHF.ao2mo">(pyscf.tdscf.rhf_slow.TDRHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.apply">apply() (pyscf.scf.hf.SCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdfields.FIELDS.applyfield">applyfield() (pyscf.rt.tdfields.FIELDS method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C.approx">approx (pyscf.x2c.x2c.X2C attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.argsort_coords">argsort_coords() (in module pyscf.symm.geom)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.as_scanner">as_scanner() (in module pyscf.scf.hf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.as_scanner">(in module pyscf.tdscf.rhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.as_scanner">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.as_scanner">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.DDCOSMO.as_solver">as_solver() (pyscf.solvent.ddcosmo.DDCOSMO method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.DDPCM.as_solver">(pyscf.solvent.ddpcm.DDPCM method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.as_subgroup">as_subgroup() (in module pyscf.symm.geom)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.atom_hf.AtomHF1e">AtomHF1e (class in pyscf.scf.atom_hf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.atoms_with_vdw_overlap">atoms_with_vdw_overlap() (in module pyscf.solvent.ddcosmo)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.atom_hf.AtomSphericAverageRHF">AtomSphericAverageRHF (class in pyscf.scf.atom_hf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.sgx/#pyscf.sgx.sgx.SGX.auxbasis">auxbasis() (pyscf.sgx.sgx.SGX property)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.auxmol_set">auxmol_set() (pyscf.rt.tdscf.RTTDSCF method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="B">B</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C.basis">basis (pyscf.x2c.x2c.X2C attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.build">build() (pyscf.scf.dhf.DHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf_symm.GHF.build">(pyscf.scf.ghf_symm.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.build">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedRHF.build">(pyscf.scf.hf_symm.SymAdaptedRHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.build">(pyscf.scf.hf_symm.SymAdaptedROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF.build">(pyscf.scf.uhf_symm.SymAdaptedUHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3.build">(pyscf.semiempirical.mindo3.RMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.UMINDO3.build">(pyscf.semiempirical.mindo3.UMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.sgx/#pyscf.sgx.sgx.SGX.build">(pyscf.sgx.sgx.SGX method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.DDCOSMO.build">(pyscf.solvent.ddcosmo.DDCOSMO method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.DDPCM.build">(pyscf.solvent.ddpcm.DDPCM method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF.build">(pyscf.x2c.x2c.X2C_UHF method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.cache_fake_multipoles">cache_fake_multipoles() (in module pyscf.solvent.ddcosmo)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.canonical_orth_">canonical_orth_() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf_symm.canonicalize">canonicalize() (in module pyscf.scf.ghf_symm)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.canonicalize">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.canonicalize">(in module pyscf.scf.hf_symm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.canonicalize">(in module pyscf.scf.rohf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.canonicalize">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.canonicalize">(in module pyscf.scf.uhf_symm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf_symm.GHF.canonicalize">(pyscf.scf.ghf_symm.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.canonicalize">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedRHF.canonicalize">(pyscf.scf.hf_symm.SymAdaptedRHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.canonicalize">(pyscf.scf.hf_symm.SymAdaptedROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.canonicalize">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.canonicalize">(pyscf.scf.uhf.UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF.canonicalize">(pyscf.scf.uhf_symm.SymAdaptedUHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.sph.cart2spinor">cart2spinor() (in module pyscf.symm.sph)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.SymmSys.cartesian_tensor">cartesian_tensor() (pyscf.symm.geom.SymmSys method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.CASCI">CASCI (pyscf.scf.uhf.UHF attribute)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF.CASCI">(pyscf.scf.uhf_symm.SymAdaptedUHF attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.CASCI">CASCI() (pyscf.scf.hf.RHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedRHF.CASCI">(pyscf.scf.hf_symm.SymAdaptedRHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.CASCI">(pyscf.scf.hf_symm.SymAdaptedROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.CASCI">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.CASSCF">CASSCF (pyscf.scf.uhf.UHF attribute)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF.CASSCF">(pyscf.scf.uhf_symm.SymAdaptedUHF attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.CASSCF">CASSCF() (pyscf.scf.hf.RHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedRHF.CASSCF">(pyscf.scf.hf_symm.SymAdaptedRHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.CASSCF">(pyscf.scf.hf_symm.SymAdaptedROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.CASSCF">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.CCSD">CCSD() (pyscf.scf.hf.SCF method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.diis.CDIIS">CDIIS (class in pyscf.scf.diis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.cg.cg_spin">cg_spin() (in module pyscf.symm.cg)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.check_convergence">check_convergence (pyscf.scf.hf.SCF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.check_given_symm">check_given_symm() (in module pyscf.symm.geom)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.check_irrep_nelec">check_irrep_nelec() (in module pyscf.scf.hf_symm)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.check_sanity">check_sanity() (pyscf.scf.hf.RHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.check_sanity">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.check_sanity">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.chgcar.CHGCAR">CHGCAR (class in pyscf.tools.chgcar)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer">CIAHOptimizer (class in pyscf.soscf.ciah)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.CIS">CIS (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.CIS">(in module pyscf.tdscf.uhf)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.CISD">CISD (pyscf.scf.rohf.ROHF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.CISD">CISD() (pyscf.scf.ghf.GHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.CISD">(pyscf.scf.hf.RHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.CISD">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.closest_axes">closest_axes() (in module pyscf.symm.geom)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.conv_check">conv_check (pyscf.scf.hf.SCF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.conv_tol">conv_tol (pyscf.scf.dhf.DHF attribute)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.conv_tol">(pyscf.scf.hf.SCF attribute)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.conv_tol">(pyscf.tdscf.rhf.TDA attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.conv_tol_grad">conv_tol_grad (pyscf.scf.hf.SCF attribute)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.conv_tol_grad">(pyscf.soscf.ciah.CIAHOptimizer attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.convert_from_">convert_from_() (pyscf.scf.ghf.GHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.convert_from_">(pyscf.scf.hf.RHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.convert_from_">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.convert_to_ghf">convert_to_ghf() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.convert_to_rhf">convert_to_rhf() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.convert_to_uhf">convert_to_uhf() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.cost_function">cost_function() (pyscf.soscf.ciah.CIAHOptimizer method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.cubegen.Cube">Cube (class in pyscf.tools.cubegen)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.damp">damp (pyscf.scf.hf.SCF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.damp_factor">damp_factor() (pyscf.scf.hf.SCF property)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.damping">damping() (in module pyscf.scf.hf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.davidson_cc">davidson_cc() (in module pyscf.soscf.ciah)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.DDCOSMO">DDCOSMO (class in pyscf.solvent.ddcosmo)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.DDCOSMO">DDCOSMO() (in module pyscf.solvent)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddCOSMO">ddCOSMO() (in module pyscf.solvent)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.DDCOSMO">DDCOSMO() (pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.ddCOSMO">ddCOSMO() (pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.ddcosmo_for_casci">ddcosmo_for_casci() (in module pyscf.solvent.ddcosmo)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.ddcosmo_for_casscf">ddcosmo_for_casscf() (in module pyscf.solvent.ddcosmo)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.ddcosmo_for_post_scf">ddcosmo_for_post_scf() (in module pyscf.solvent.ddcosmo)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.ddcosmo_for_scf">ddcosmo_for_scf() (in module pyscf.solvent.ddcosmo)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.ddcosmo_for_tdscf">ddcosmo_for_tdscf() (in module pyscf.solvent.ddcosmo)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.DDPCM">DDPCM (class in pyscf.solvent.ddpcm)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.DDPCM">DDPCM() (in module pyscf.solvent)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddPCM">ddPCM() (in module pyscf.solvent)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.DDPCM">DDPCM() (pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.ddPCM">ddPCM() (pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.ddpcm_for_casci">ddpcm_for_casci() (in module pyscf.solvent.ddpcm)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.ddpcm_for_casscf">ddpcm_for_casscf() (in module pyscf.solvent.ddpcm)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.ddpcm_for_post_scf">ddpcm_for_post_scf() (in module pyscf.solvent.ddpcm)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.ddpcm_for_scf">ddpcm_for_scf() (in module pyscf.solvent.ddpcm)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.ddpcm_for_tdscf">ddpcm_for_tdscf() (in module pyscf.solvent.ddpcm)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.chgcar.density">density() (in module pyscf.tools.chgcar)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.cubegen.density">(in module pyscf.tools.cubegen)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3.density_fit">density_fit (pyscf.semiempirical.mindo3.RMINDO3 attribute)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.UMINDO3.density_fit">(pyscf.semiempirical.mindo3.UMINDO3 attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.density_fit">density_fit() (in module pyscf.scf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.density_fit">(pyscf.scf.hf.SCF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.det_ovlp">det_ovlp() (in module pyscf.scf.ghf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.det_ovlp">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.det_ovlp">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.det_ovlp">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.detect_symm">detect_symm() (in module pyscf.symm.geom)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.DFMP2">DFMP2 (pyscf.scf.rohf.ROHF attribute)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.DFMP2">(pyscf.scf.uhf.UHF attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.DFMP2">DFMP2() (pyscf.scf.hf.RHF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF">DHF (class in pyscf.scf.dhf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.DHF">DHF() (in module pyscf.scf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.diis.DIIS">DIIS (in module pyscf.scf.diis)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.DIIS">(pyscf.scf.hf.SCF attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.diis">diis (pyscf.scf.hf.SCF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.diis_file">diis_file (pyscf.scf.hf.SCF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.diis_space">diis_space (pyscf.scf.hf.SCF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.diis_space_rollback">diis_space_rollback (pyscf.scf.hf.SCF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.diis_start_cycle">diis_start_cycle (pyscf.scf.hf.SCF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.dip_moment">dip_moment() (in module pyscf.scf.dhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.dip_moment">(in module pyscf.scf.ghf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.dip_moment">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.dip_moment">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.dip_moment">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.dip_moment">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF.dip_moment">(pyscf.x2c.x2c.X2C_UHF method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.dipole">dipole() (pyscf.rt.tdscf.RTTDSCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.addons.direct_prod">direct_prod() (in module pyscf.symm.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.direct_scf">direct_scf (pyscf.scf.hf.SCF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.direct_scf_tol">direct_scf_tol (pyscf.scf.hf.SCF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.DKS">DKS() (in module pyscf.scf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.DDCOSMO.dm">dm() (pyscf.solvent.ddcosmo.DDCOSMO property)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.Dmatrix.Dmatrix">Dmatrix() (in module pyscf.symm.Dmatrix)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.Dmatrix.dmatrix">dmatrix() (in module pyscf.symm.Dmatrix)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.dot_eri_dm">dot_eri_dm() (in module pyscf.scf.hf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.dRPA">dRPA (class in pyscf.tdscf.rks)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.dRPA">(class in pyscf.tdscf.uks)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.dRPA">dRPA() (in module pyscf.tdscf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.dTDA">dTDA (class in pyscf.tdscf.rks)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.dTDA">(class in pyscf.tdscf.uks)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.dTDA">dTDA() (in module pyscf.tdscf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.dump_chk">dump_chk() (pyscf.scf.hf.SCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.atom_hf.AtomSphericAverageRHF.dump_flags">dump_flags() (pyscf.scf.atom_hf.AtomSphericAverageRHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.dump_flags">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf_symm.GHF.dump_flags">(pyscf.scf.ghf_symm.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.dump_flags">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.dump_flags">(pyscf.scf.hf_symm.SymAdaptedROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.dump_flags">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.dump_flags">(pyscf.scf.uhf.UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF.dump_flags">(pyscf.scf.uhf_symm.SymAdaptedUHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.sgx/#pyscf.sgx.sgx.SGX.dump_flags">(pyscf.sgx.sgx.SGX method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.DDCOSMO.dump_flags">(pyscf.solvent.ddcosmo.DDCOSMO method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.DDPCM.dump_flags">(pyscf.solvent.ddpcm.DDPCM method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.dump_flags">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDA.dump_flags">(pyscf.tdscf.uhf.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C.dump_flags">(pyscf.x2c.x2c.X2C method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF.dump_flags">(pyscf.x2c.x2c.X2C_UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UKS.dump_flags">(pyscf.x2c.x2c.X2C_UKS method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.chkfile_util.dump_mo">dump_mo() (in module pyscf.tools.chkfile_util)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.dump_mat.dump_mo">(in module pyscf.tools.dump_mat)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.dump_mat.dump_rec">dump_rec() (in module pyscf.tools.dump_mat)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.chkfile.dump_scf">dump_scf() (in module pyscf.scf.chkfile)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.molden.dump_scf">(in module pyscf.tools.molden)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.dump_scf_summary">dump_scf_summary() (in module pyscf.scf.hf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.dump_scf_summary">(pyscf.scf.hf.SCF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.basis.dump_symm_adapted_basis">dump_symm_adapted_basis() (in module pyscf.symm.basis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.dump_mat.dump_tri">dump_tri() (in module pyscf.tools.dump_mat)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.dynamic_level_shift">dynamic_level_shift() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.dynamic_level_shift_">dynamic_level_shift_() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.dynamic_occ">dynamic_occ() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.dynamic_occ_">dynamic_occ_() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.dynamic_sz_">dynamic_sz_() (in module pyscf.scf.addons)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.e_tot">e_tot() (pyscf.tdscf.rhf.TDA property)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.diis.EDIIS">EDIIS (class in pyscf.scf.diis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.diis.ediis_minimize">ediis_minimize() (in module pyscf.scf.diis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.eig">eig() (in module pyscf.scf.hf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.eig">(in module pyscf.scf.hf_symm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.eig">(in module pyscf.tdscf.common_slow)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.atom_hf.AtomHF1e.eig">(pyscf.scf.atom_hf.AtomHF1e method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.atom_hf.AtomSphericAverageRHF.eig">(pyscf.scf.atom_hf.AtomSphericAverageRHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf_symm.GHF.eig">(pyscf.scf.ghf_symm.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.eig">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedRHF.eig">(pyscf.scf.hf_symm.SymAdaptedRHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.eig">(pyscf.scf.hf_symm.SymAdaptedROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.eig">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.eig">(pyscf.scf.uhf.UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF.eig">(pyscf.scf.uhf_symm.SymAdaptedUHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.addons.eigh">eigh() (in module pyscf.symm.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.VindTracker.elements_calc">elements_calc() (pyscf.tdscf.common_slow.VindTracker property)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.VindTracker.elements_total">elements_total() (pyscf.tdscf.common_slow.VindTracker property)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.energy">energy() (in module pyscf.solvent.ddcosmo)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.energy">(in module pyscf.solvent.ddpcm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.energy">(pyscf.rt.tdscf.RTTDSCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.DDCOSMO.energy">(pyscf.solvent.ddcosmo.DDCOSMO method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.energy_elec">energy_elec() (in module pyscf.scf.hf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.energy_elec">(in module pyscf.scf.rohf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.energy_elec">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.energy_elec">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.energy_elec">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.energy_elec">(pyscf.scf.uhf.UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UKS.energy_elec">(pyscf.x2c.x2c.X2C_UKS method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.energy_nuc">energy_nuc() (in module pyscf.semiempirical.mindo3)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.energy_nuc">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3.energy_nuc">(pyscf.semiempirical.mindo3.RMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.UMINDO3.energy_nuc">(pyscf.semiempirical.mindo3.UMINDO3 method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.energy_tot">energy_tot() (in module pyscf.scf.hf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.energy_tot">(in module pyscf.semiempirical.mindo3)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.energy_tot">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3.energy_tot">(pyscf.semiempirical.mindo3.RMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.UMINDO3.energy_tot">(pyscf.semiempirical.mindo3.UMINDO3 method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.DDCOSMO.epcm">epcm() (pyscf.solvent.ddcosmo.DDCOSMO property)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf_slow.TDRHF.eri1">eri1 (pyscf.tdscf.rhf_slow.TDRHF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf_slow.TDRHF.eri4">eri4 (pyscf.tdscf.rhf_slow.TDRHF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf_slow.TDRHF.eri8">eri8 (pyscf.tdscf.rhf_slow.TDRHF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDERIMatrixBlocks.eri_mknj">eri_mknj() (pyscf.tdscf.common_slow.TDERIMatrixBlocks method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDERIMatrixBlocks.eri_ov">eri_ov() (pyscf.tdscf.common_slow.TDERIMatrixBlocks method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdfields.FIELDS.expectation">expectation() (pyscf.rt.tdfields.FIELDS method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.expmat">expmat() (in module pyscf.soscf.ciah)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.newton_ah.expmat">(in module pyscf.soscf.newton_ah)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.extract_rotation">extract_rotation() (pyscf.soscf.ciah.CIAHOptimizer method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.fast_newton">fast_newton() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdfields.FIELDS">FIELDS (class in pyscf.rt.tdfields)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.float_occ">float_occ() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.float_occ_">float_occ_() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.fockbuild">fockbuild() (pyscf.rt.tdscf.RTTDSCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.follow_state">follow_state() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.follow_state_">follow_state_() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.format_frozen_k">format_frozen_k() (in module pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.format_frozen_mol">format_frozen_mol() (in module pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.format_mask">format_mask() (in module pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.frac_occ">frac_occ() (in module pyscf.scf.addons)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.atom_hf.frac_occ">(in module pyscf.scf.atom_hf)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.frac_occ_">frac_occ_() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.from_chk">from_chk() (pyscf.scf.hf.SCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.fcidump.from_chkfile">from_chkfile() (in module pyscf.tools.fcidump)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.molden.from_chkfile">(in module pyscf.tools.molden)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.fcidump.from_integrals">from_integrals() (in module pyscf.tools.fcidump)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.molden.from_mcscf">from_mcscf() (in module pyscf.tools.molden)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.fcidump.from_mo">from_mo() (in module pyscf.tools.fcidump)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.molden.from_mo">(in module pyscf.tools.molden)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.fcidump.from_scf">from_scf() (in module pyscf.tools.fcidump)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.molden.from_scf">(in module pyscf.tools.molden)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.full2ab">full2ab() (in module pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.full2mkk">full2mkk() (in module pyscf.tdscf.common_slow)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.gen_ddcosmo_solver">gen_ddcosmo_solver() (in module pyscf.solvent.ddcosmo)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.gen_ddpcm_solver">gen_ddpcm_solver() (in module pyscf.solvent.ddpcm)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.gen_g_hop">gen_g_hop() (pyscf.soscf.ciah.CIAHOptimizer method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.newton_ah.gen_g_hop_dhf">gen_g_hop_dhf() (in module pyscf.soscf.newton_ah)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.newton_ah.gen_g_hop_ghf">gen_g_hop_ghf() (in module pyscf.soscf.newton_ah)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.newton_ah.gen_g_hop_rhf">gen_g_hop_rhf() (in module pyscf.soscf.newton_ah)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.newton_ah.gen_g_hop_rohf">gen_g_hop_rohf() (in module pyscf.soscf.newton_ah)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.newton_ah.gen_g_hop_uhf">gen_g_hop_uhf() (in module pyscf.soscf.newton_ah)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.gen_response">gen_response() (pyscf.scf.dhf.DHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.gen_response">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.gen_response">(pyscf.scf.hf.RHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.gen_response">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.gen_response">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.sfx2c1e_grad.gen_sf_hfw">gen_sf_hfw() (in module pyscf.x2c.sfx2c1e_grad)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.sfx2c1e_hess.gen_sf_hfw">(in module pyscf.x2c.sfx2c1e_hess)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.DDCOSMO.gen_solver">gen_solver() (pyscf.solvent.ddcosmo.DDCOSMO method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.DDPCM.gen_solver">(pyscf.solvent.ddpcm.DDPCM method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.gen_tda_hop">gen_tda_hop() (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.gen_tda_hop">(in module pyscf.tdscf.uhf)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.gen_tda_operation">gen_tda_operation() (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.gen_tda_operation">(in module pyscf.tdscf.uhf)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.gen_tdhf_operation">gen_tdhf_operation() (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.gen_tdhf_operation">(in module pyscf.tdscf.uhf)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.gen_vind">gen_vind() (pyscf.tdscf.rhf.TDA method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDHF.gen_vind">(pyscf.tdscf.rhf.TDHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.TDDFTNoHybrid.gen_vind">(pyscf.tdscf.rks.TDDFTNoHybrid method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDA.gen_vind">(pyscf.tdscf.uhf.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDHF.gen_vind">(pyscf.tdscf.uhf.TDHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.get_ab">get_ab() (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.get_ab">(in module pyscf.tdscf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.get_ab">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDA.get_ab">(pyscf.tdscf.uhf.TDA method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.atom_hf.get_atm_nrhf">get_atm_nrhf() (in module pyscf.scf.atom_hf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.get_atomic_radii">get_atomic_radii() (in module pyscf.solvent.ddcosmo)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.DDCOSMO.get_atomic_radii">(pyscf.solvent.ddcosmo.DDCOSMO method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.chgcar.CHGCAR.get_coords">get_coords() (pyscf.tools.chgcar.CHGCAR method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.cubegen.Cube.get_coords">(pyscf.tools.cubegen.Cube method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.diis.get_err_vec">get_err_vec() (in module pyscf.scf.diis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.Dmatrix.get_euler_angles">get_euler_angles() (in module pyscf.symm.Dmatrix)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.get_fock">get_fock() (in module pyscf.scf.hf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.get_fock">(in module pyscf.scf.rohf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.get_fock">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.get_fock">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.get_fock">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.get_fock">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.get_ghf_orbspin">get_ghf_orbspin() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.get_grad">get_grad() (in module pyscf.scf.dhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.get_grad">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.get_grad">(in module pyscf.scf.rohf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.get_grad">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.atom_hf.AtomSphericAverageRHF.get_grad">(pyscf.scf.atom_hf.AtomSphericAverageRHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.get_grad">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.get_grad">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf_symm.GHF.get_grad">(pyscf.scf.ghf_symm.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.get_grad">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedRHF.get_grad">(pyscf.scf.hf_symm.SymAdaptedRHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.get_grad">(pyscf.scf.hf_symm.SymAdaptedROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.get_grad">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.get_grad">(pyscf.scf.uhf.UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF.get_grad">(pyscf.scf.uhf_symm.SymAdaptedUHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.get_grad">(pyscf.soscf.ciah.CIAHOptimizer method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.sgx/#pyscf.sgx.sgx_jk.get_gridss">get_gridss() (in module pyscf.sgx.sgx_jk)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.rmindo3_grad.Gradients.get_hcore">get_hcore (pyscf.semiempirical.rmindo3_grad.Gradients attribute)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.umindo3_grad.Gradients.get_hcore">(pyscf.semiempirical.umindo3_grad.Gradients attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.get_hcore">get_hcore() (in module pyscf.scf.dhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.get_hcore">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.get_hcore">(in module pyscf.semiempirical.mindo3)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.get_hcore">(in module pyscf.x2c.x2c)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.get_hcore">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.get_hcore">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.get_hcore">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3.get_hcore">(pyscf.semiempirical.mindo3.RMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.UMINDO3.get_hcore">(pyscf.semiempirical.mindo3.UMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.sfx2c1e.SpinFreeX2C.get_hcore">(pyscf.x2c.sfx2c1e.SpinFreeX2C method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C.get_hcore">(pyscf.x2c.x2c.X2C method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF.get_hcore">(pyscf.x2c.x2c.X2C_UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.get_init_guess">get_init_guess() (in module pyscf.scf.dhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.get_init_guess">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.get_init_guess">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.get_init_guess">(in module pyscf.semiempirical.mindo3)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.get_init_guess">(in module pyscf.x2c.x2c)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.get_init_guess">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3.get_init_guess">(pyscf.semiempirical.mindo3.RMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.UMINDO3.get_init_guess">(pyscf.semiempirical.mindo3.UMINDO3 method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.get_irrep_nelec">get_irrep_nelec() (in module pyscf.scf.hf_symm)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.get_irrep_nelec">(in module pyscf.scf.uhf_symm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf_symm.GHF.get_irrep_nelec">(pyscf.scf.ghf_symm.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedRHF.get_irrep_nelec">(pyscf.scf.hf_symm.SymAdaptedRHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.get_irrep_nelec">(pyscf.scf.hf_symm.SymAdaptedROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF.get_irrep_nelec">(pyscf.scf.uhf_symm.SymAdaptedUHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.get_j">get_j() (pyscf.rt.tdscf.RTTDSCF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.get_j">(pyscf.scf.hf.SCF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.get_jk">get_jk() (in module pyscf.scf.dhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.get_jk">(in module pyscf.scf.ghf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.get_jk">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.jk.get_jk">(in module pyscf.scf.jk)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.get_jk">(in module pyscf.semiempirical.mindo3)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.rmindo3_grad.get_jk">(in module pyscf.semiempirical.rmindo3_grad)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.sgx/#pyscf.sgx.sgx_jk.get_jk">(in module pyscf.sgx.sgx_jk)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.get_jk">(in module pyscf.x2c.x2c)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.get_jk">(pyscf.rt.tdscf.RTTDSCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.get_jk">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.get_jk">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.get_jk">(pyscf.scf.hf.RHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.get_jk">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.get_jk">(pyscf.scf.uhf.UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3.get_jk">(pyscf.semiempirical.mindo3.RMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.UMINDO3.get_jk">(pyscf.semiempirical.mindo3.UMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.rmindo3_grad.Gradients.get_jk">(pyscf.semiempirical.rmindo3_grad.Gradients method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.umindo3_grad.Gradients.get_jk">(pyscf.semiempirical.umindo3_grad.Gradients method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.sgx/#pyscf.sgx.sgx.SGX.get_jk">(pyscf.sgx.sgx.SGX method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF.get_jk">(pyscf.x2c.x2c.X2C_UHF method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.get_jk_coulomb">get_jk_coulomb() (in module pyscf.scf.dhf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.sgx/#pyscf.sgx.sgx_jk.get_jk_favorj">get_jk_favorj() (in module pyscf.sgx.sgx_jk)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.sgx/#pyscf.sgx.sgx_jk.get_jk_favork">get_jk_favork() (in module pyscf.sgx.sgx_jk)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.get_k">get_k() (pyscf.rt.tdscf.RTTDSCF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.get_k">(pyscf.scf.hf.SCF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.cubegen.Cube.get_ngrids">get_ngrids() (pyscf.tools.cubegen.Cube method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.get_nto">get_nto() (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.get_nto">(in module pyscf.tdscf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.get_nto">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDA.get_nto">(pyscf.tdscf.uhf.TDA method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.diis.CDIIS.get_num_vec">get_num_vec() (pyscf.scf.diis.CDIIS method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.get_occ">get_occ() (in module pyscf.scf.ghf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.get_occ">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.get_occ">(in module pyscf.scf.rohf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.get_occ">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.atom_hf.AtomSphericAverageRHF.get_occ">(pyscf.scf.atom_hf.AtomSphericAverageRHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.get_occ">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.get_occ">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf_symm.GHF.get_occ">(pyscf.scf.ghf_symm.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.get_occ">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedRHF.get_occ">(pyscf.scf.hf_symm.SymAdaptedRHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.get_occ">(pyscf.scf.hf_symm.SymAdaptedROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.get_occ">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.get_occ">(pyscf.scf.uhf.UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF.get_occ">(pyscf.scf.uhf_symm.SymAdaptedUHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3.get_occ">(pyscf.semiempirical.mindo3.RMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.UMINDO3.get_occ">(pyscf.semiempirical.mindo3.UMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF.get_occ">(pyscf.x2c.x2c.X2C_UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf_symm.get_orbsym">get_orbsym() (in module pyscf.scf.ghf_symm)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.get_orbsym">(in module pyscf.scf.hf_symm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.get_orbsym">(in module pyscf.scf.uhf_symm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf_symm.GHF.get_orbsym">(pyscf.scf.ghf_symm.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedRHF.get_orbsym">(pyscf.scf.hf_symm.SymAdaptedRHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.get_orbsym">(pyscf.scf.hf_symm.SymAdaptedROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF.get_orbsym">(pyscf.scf.uhf_symm.SymAdaptedUHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.get_ovlp">get_ovlp() (in module pyscf.scf.dhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.get_ovlp">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.get_ovlp">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.get_ovlp">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.get_ovlp">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3.get_ovlp">(pyscf.semiempirical.mindo3.RMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.UMINDO3.get_ovlp">(pyscf.semiempirical.mindo3.UMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.rmindo3_grad.Gradients.get_ovlp">(pyscf.semiempirical.rmindo3_grad.Gradients method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.umindo3_grad.Gradients.get_ovlp">(pyscf.semiempirical.umindo3_grad.Gradients method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF.get_ovlp">(pyscf.x2c.x2c.X2C_UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.get_precond">get_precond() (pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.get_roothaan_fock">get_roothaan_fock() (in module pyscf.scf.rohf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.get_subgroup">get_subgroup() (in module pyscf.symm.geom)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.get_veff">get_veff() (in module pyscf.scf.hf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.get_veff">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.get_veff">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.get_veff">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.get_veff">(pyscf.scf.hf.RHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.get_veff">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.get_veff">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.get_veff">(pyscf.scf.uhf.UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF.get_veff">(pyscf.x2c.x2c.X2C_UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UKS.get_veff">(pyscf.x2c.x2c.X2C_UKS method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.TDDFTNoHybrid.get_vind">get_vind() (pyscf.tdscf.uks.TDDFTNoHybrid method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.cubegen.Cube.get_volume_element">get_volume_element() (pyscf.tools.cubegen.Cube method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.get_vxc">get_vxc() (pyscf.rt.tdscf.RTTDSCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.get_wfnsym">get_wfnsym() (in module pyscf.scf.hf_symm)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.get_wfnsym">(in module pyscf.scf.uhf_symm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedRHF.get_wfnsym">(pyscf.scf.hf_symm.SymAdaptedRHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.get_wfnsym">(pyscf.scf.hf_symm.SymAdaptedROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF.get_wfnsym">(pyscf.scf.uhf_symm.SymAdaptedUHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.sfx2c1e.SpinFreeX2C.get_xmat">get_xmat() (pyscf.x2c.sfx2c1e.SpinFreeX2C method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C.get_xmat">(pyscf.x2c.x2c.X2C method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C.get_xmol">get_xmol() (pyscf.x2c.x2c.X2C method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF">GHF (class in pyscf.scf.ghf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf_symm.GHF">(class in pyscf.scf.ghf_symm)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.GHF">GHF() (in module pyscf.scf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability.ghf_stability">ghf_stability() (in module pyscf.scf.stability)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.GKS">GKS() (in module pyscf.scf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.rmindo3_grad.Grad">Grad (in module pyscf.semiempirical.rmindo3_grad)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.umindo3_grad.Grad">(in module pyscf.semiempirical.umindo3_grad)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.rmindo3_grad.Gradients.grad_elec">grad_elec() (pyscf.semiempirical.rmindo3_grad.Gradients method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.umindo3_grad.Gradients.grad_elec">(pyscf.semiempirical.umindo3_grad.Gradients method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.rmindo3_grad.grad_nuc">grad_nuc() (in module pyscf.semiempirical.rmindo3_grad)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.rmindo3_grad.Gradients.grad_nuc">(pyscf.semiempirical.rmindo3_grad.Gradients method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.umindo3_grad.Gradients.grad_nuc">(pyscf.semiempirical.umindo3_grad.Gradients method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.rmindo3_grad.Gradients">Gradients (class in pyscf.semiempirical.rmindo3_grad)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.umindo3_grad.Gradients">(class in pyscf.semiempirical.umindo3_grad)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.Gradients">Gradients() (pyscf.tdscf.rhf.TDA method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDHF.Gradients">(pyscf.tdscf.rhf.TDHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.TDA.Gradients">(pyscf.tdscf.rks.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.TDDFT.Gradients">(pyscf.tdscf.rks.TDDFT method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDA.Gradients">(pyscf.tdscf.uhf.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDHF.Gradients">(pyscf.tdscf.uhf.TDHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.TDA.Gradients">(pyscf.tdscf.uks.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.TDDFT.Gradients">(pyscf.tdscf.uks.TDDFT method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.guess_orbspin">guess_orbspin() (in module pyscf.scf.ghf)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="H">H</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.SymmSys.has_icenter">has_icenter() (pyscf.symm.geom.SymmSys method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.SymmSys.has_improper_rotation">has_improper_rotation() (pyscf.symm.geom.SymmSys method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.SymmSys.has_mirror">has_mirror() (pyscf.symm.geom.SymmSys method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.SymmSys.has_rotation">has_rotation() (pyscf.symm.geom.SymmSys method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.sfx2c1e.SpinFreeX2C.hcore_deriv_generator">hcore_deriv_generator() (pyscf.x2c.sfx2c1e.SpinFreeX2C method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.rmindo3_grad.hcore_generator">hcore_generator() (in module pyscf.semiempirical.rmindo3_grad)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.rmindo3_grad.Gradients.hcore_generator">(pyscf.semiempirical.rmindo3_grad.Gradients method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.umindo3_grad.Gradients.hcore_generator">(pyscf.semiempirical.umindo3_grad.Gradients method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.sfx2c1e_grad.hcore_grad_generator">hcore_grad_generator() (in module pyscf.x2c.sfx2c1e_grad)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.sfx2c1e_hess.hcore_hess_generator">hcore_hess_generator() (in module pyscf.x2c.sfx2c1e_hess)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.molden.header">header() (in module pyscf.tools.molden)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.HF">HF() (in module pyscf.scf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.HF1e">HF1e (class in pyscf.scf.dhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.HF1e">(class in pyscf.scf.hf_symm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.HF1e">(class in pyscf.scf.rohf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.HF1e">(class in pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.HF1e">(class in pyscf.scf.uhf_symm)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.hf_energy">hf_energy() (pyscf.scf.hf.SCF property)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.householder">householder() (in module pyscf.symm.geom)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdfields.FIELDS.impulseamp">impulseamp() (pyscf.rt.tdfields.FIELDS method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.init_direct_scf">init_direct_scf() (pyscf.scf.dhf.DHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.init_direct_scf">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF.init_direct_scf">(pyscf.x2c.x2c.X2C_UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.init_guess">init_guess (pyscf.scf.hf.SCF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.init_guess">init_guess() (pyscf.tdscf.rhf.TDA method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDHF.init_guess">(pyscf.tdscf.rhf.TDHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDA.init_guess">(pyscf.tdscf.uhf.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDHF.init_guess">(pyscf.tdscf.uhf.TDHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.init_guess_by_1e">init_guess_by_1e() (in module pyscf.scf.dhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.init_guess_by_1e">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.init_guess_by_1e">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.init_guess_by_1e">(in module pyscf.x2c.x2c)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.init_guess_by_1e">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.init_guess_by_1e">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.init_guess_by_1e">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.init_guess_by_atom">init_guess_by_atom() (in module pyscf.scf.dhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.init_guess_by_atom">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.init_guess_by_atom">(in module pyscf.scf.rohf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.init_guess_by_atom">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.init_guess_by_atom">(in module pyscf.x2c.x2c)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.init_guess_by_atom">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.init_guess_by_atom">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.init_guess_by_atom">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.init_guess_by_atom">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.init_guess_by_atom">(pyscf.scf.uhf.UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF.init_guess_by_atom">(pyscf.x2c.x2c.X2C_UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.init_guess_by_chkfile">init_guess_by_chkfile() (in module pyscf.scf.dhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.init_guess_by_chkfile">(in module pyscf.scf.ghf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.init_guess_by_chkfile">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.init_guess_by_chkfile">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.init_guess_by_chkfile">(in module pyscf.x2c.x2c)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.init_guess_by_chkfile">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.init_guess_by_chkfile">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.init_guess_by_chkfile">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.init_guess_by_chkfile">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.init_guess_by_chkfile">(pyscf.scf.uhf.UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF.init_guess_by_chkfile">(pyscf.x2c.x2c.X2C_UHF method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.init_guess_by_huckel">init_guess_by_huckel() (in module pyscf.scf.dhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.init_guess_by_huckel">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.init_guess_by_huckel">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.init_guess_by_huckel">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.init_guess_by_huckel">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.init_guess_by_huckel">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.init_guess_by_huckel">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.init_guess_by_huckel">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.init_guess_by_minao">init_guess_by_minao() (in module pyscf.scf.dhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.init_guess_by_minao">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.init_guess_by_minao">(in module pyscf.scf.rohf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.init_guess_by_minao">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.init_guess_by_minao">(in module pyscf.x2c.x2c)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.init_guess_by_minao">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.init_guess_by_minao">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.init_guess_by_minao">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.init_guess_by_minao">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.init_guess_by_minao">(pyscf.scf.uhf.UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF.init_guess_by_minao">(pyscf.x2c.x2c.X2C_UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.initfockbuild">initfockbuild() (pyscf.rt.tdscf.RTTDSCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.initialcondition">initialcondition() (pyscf.rt.tdscf.RTTDSCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdfields.FIELDS.initializeexpectation">initializeexpectation() (pyscf.rt.tdfields.FIELDS method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.addons.irrep_id2name">irrep_id2name() (in module pyscf.symm.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.addons.irrep_name">irrep_name() (in module pyscf.symm.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.addons.irrep_name2id">irrep_name2id() (in module pyscf.symm.addons)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="J">J</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.jk.jk_build">jk_build() (in module pyscf.scf.jk)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="K">K</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.k_nmo">k_nmo() (in module pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.k_nocc">k_nocc() (in module pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.cphf.kernel">kernel() (in module pyscf.scf.cphf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.kernel">(in module pyscf.scf.dhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.kernel">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ucphf.kernel">(in module pyscf.scf.ucphf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo_grad.kernel">(in module pyscf.solvent.ddcosmo_grad)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.newton_ah.kernel">(in module pyscf.soscf.newton_ah)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.kernel">(in module pyscf.tdscf.common_slow)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.kernel">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.sgx/#pyscf.sgx.sgx.SGX.kernel">(pyscf.sgx.sgx.SGX method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.DDCOSMO.kernel">(pyscf.solvent.ddcosmo.DDCOSMO method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDBase.kernel">(pyscf.tdscf.common_slow.TDBase method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.kernel">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDHF.kernel">(pyscf.tdscf.rhf.TDHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.TDDFTNoHybrid.kernel">(pyscf.tdscf.rks.TDDFTNoHybrid method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDA.kernel">(pyscf.tdscf.uhf.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDHF.kernel">(pyscf.tdscf.uhf.TDHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.TDDFTNoHybrid.kernel">(pyscf.tdscf.uks.TDDFTNoHybrid method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.kf_interval">kf_interval (pyscf.soscf.ciah.CIAHOptimizer attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.kf_trust_region">kf_trust_region (pyscf.soscf.ciah.CIAHOptimizer attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.KS">KS() (in module pyscf.scf)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.addons.label_orb_symm">label_orb_symm() (in module pyscf.symm.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.level_shift">level_shift (pyscf.scf.hf.SCF attribute)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.level_shift">(pyscf.tdscf.rhf.TDA attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.level_shift">level_shift() (in module pyscf.scf.hf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.level_shift_factor">level_shift_factor() (pyscf.scf.hf.SCF property)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.lindep">lindep (pyscf.tdscf.rhf.TDA attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.basis.linearmole_irrep_id2symb">linearmole_irrep_id2symb() (in module pyscf.symm.basis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.basis.linearmole_irrep_symb2id">linearmole_irrep_symb2id() (in module pyscf.symm.basis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.basis.linearmole_symm_adapted_basis">linearmole_symm_adapted_basis() (in module pyscf.symm.basis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.basis.linearmole_symm_descent">linearmole_symm_descent() (in module pyscf.symm.basis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.molden.load">load() (in module pyscf.tools.molden)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.chkfile.load_scf">load_scf() (in module pyscf.scf.chkfile)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.loginstant">loginstant() (pyscf.rt.tdscf.RTTDSCF method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf/#pyscf.M">M() (in module pyscf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.ring.make">make() (in module pyscf.tools.ring)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.c60struct.make12">make12() (in module pyscf.tools.c60struct)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.c60struct.make20">make20() (in module pyscf.tools.c60struct)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.c60struct.make60">make60() (in module pyscf.tools.c60struct)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.make_A">make_A() (in module pyscf.solvent.ddpcm)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.make_asym_dm">make_asym_dm() (in module pyscf.scf.uhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.make_asym_dm">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo_grad.make_e_psi1">make_e_psi1() (in module pyscf.solvent.ddcosmo_grad)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.make_fi">make_fi() (in module pyscf.solvent.ddcosmo)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo_grad.make_fi1">make_fi1() (in module pyscf.solvent.ddcosmo_grad)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo_grad.make_grad_object">make_grad_object() (in module pyscf.solvent.ddcosmo_grad)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.make_grids_one_sphere">make_grids_one_sphere() (in module pyscf.solvent.ddcosmo)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.make_L">make_L() (in module pyscf.solvent.ddcosmo)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo_grad.make_L1">make_L1() (in module pyscf.solvent.ddcosmo_grad)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.make_phi">make_phi() (in module pyscf.solvent.ddcosmo)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo_grad.make_phi1">make_phi1() (in module pyscf.solvent.ddcosmo_grad)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.make_psi_vmat">make_psi_vmat() (in module pyscf.solvent.ddcosmo)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.make_rdm1">make_rdm1() (in module pyscf.scf.hf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.make_rdm1">(in module pyscf.scf.rohf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.make_rdm1">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.make_rdm1">(in module pyscf.x2c.x2c)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.make_rdm1">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.make_rdm1">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.make_rdm1">(pyscf.scf.hf_symm.SymAdaptedROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.make_rdm1">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.make_rdm1">(pyscf.scf.uhf.UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF.make_rdm1">(pyscf.x2c.x2c.X2C_UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.matrixpower">matrixpower() (in module pyscf.rt.tdscf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.max_cycle">max_cycle (pyscf.scf.hf.SCF attribute)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.max_cycle">(pyscf.tdscf.rhf.TDA attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.max_iters">max_iters (pyscf.soscf.ciah.CIAHOptimizer attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.max_space">max_space (pyscf.tdscf.rhf.TDA attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.max_stepsize">max_stepsize (pyscf.soscf.ciah.CIAHOptimizer attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.cubegen.mep">mep() (in module pyscf.tools.cubegen)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.MINDO3">MINDO3() (in module pyscf.semiempirical)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.proxy.mk_make_canonic">mk_make_canonic() (in module pyscf.tdscf.proxy)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.mkk2ab">mkk2ab() (in module pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.mkk2full">mkk2full() (in module pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.mknj2i">mknj2i() (in module pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.mo_mapping.mo_1to1map">mo_1to1map() (in module pyscf.tools.mo_mapping)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.MolecularMFMixin.mo_coeff">mo_coeff() (pyscf.tdscf.common_slow.MolecularMFMixin property)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.PeriodicMFMixin.mo_coeff">(pyscf.tdscf.common_slow.PeriodicMFMixin property)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.MolecularMFMixin.mo_coeff_full">mo_coeff_full() (pyscf.tdscf.common_slow.MolecularMFMixin property)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.PeriodicMFMixin.mo_coeff_full">(pyscf.tdscf.common_slow.PeriodicMFMixin property)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.mo_mapping.mo_comps">mo_comps() (in module pyscf.tools.mo_mapping)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.MolecularMFMixin.mo_energy">mo_energy() (pyscf.tdscf.common_slow.MolecularMFMixin property)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.PeriodicMFMixin.mo_energy">(pyscf.tdscf.common_slow.PeriodicMFMixin property)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.mo_mapping.mo_map">mo_map() (in module pyscf.tools.mo_mapping)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.MolecularMFMixin.mo_occ">mo_occ() (pyscf.tdscf.common_slow.MolecularMFMixin property)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.PeriodicMFMixin.mo_occ">(pyscf.tdscf.common_slow.PeriodicMFMixin property)</a>
+</li>
+      </ul></li>
+      <li>
+    module
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf/#module-pyscf">pyscf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf/#module-pyscf.post_scf">pyscf.post_scf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.rt/#module-pyscf.rt">pyscf.rt</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.rt/#module-pyscf.rt.tdfields">pyscf.rt.tdfields</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.rt/#module-pyscf.rt.tdscf">pyscf.rt.tdscf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf">pyscf.scf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.addons">pyscf.scf.addons</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.atom_hf">pyscf.scf.atom_hf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.chkfile">pyscf.scf.chkfile</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.cphf">pyscf.scf.cphf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.dhf">pyscf.scf.dhf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.diis">pyscf.scf.diis</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.ghf">pyscf.scf.ghf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.ghf_symm">pyscf.scf.ghf_symm</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.hf">pyscf.scf.hf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.hf_symm">pyscf.scf.hf_symm</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.jk">pyscf.scf.jk</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.newton_ah">pyscf.scf.newton_ah</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.rohf">pyscf.scf.rohf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.stability">pyscf.scf.stability</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.stability_slow">pyscf.scf.stability_slow</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.ucphf">pyscf.scf.ucphf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.uhf">pyscf.scf.uhf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.uhf_symm">pyscf.scf.uhf_symm</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.x2c">pyscf.scf.x2c</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#module-pyscf.semiempirical">pyscf.semiempirical</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#module-pyscf.semiempirical.mindo3">pyscf.semiempirical.mindo3</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#module-pyscf.semiempirical.mopac_param">pyscf.semiempirical.mopac_param</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#module-pyscf.semiempirical.rmindo3_grad">pyscf.semiempirical.rmindo3_grad</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#module-pyscf.semiempirical.umindo3_grad">pyscf.semiempirical.umindo3_grad</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.sgx/#module-pyscf.sgx">pyscf.sgx</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.sgx/#module-pyscf.sgx.sgx">pyscf.sgx.sgx</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.sgx/#module-pyscf.sgx.sgx_jk">pyscf.sgx.sgx_jk</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#module-pyscf.solvent">pyscf.solvent</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#module-pyscf.solvent.ddcosmo">pyscf.solvent.ddcosmo</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#module-pyscf.solvent.ddcosmo_grad">pyscf.solvent.ddcosmo_grad</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#module-pyscf.solvent.ddpcm">pyscf.solvent.ddpcm</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.soscf/#module-pyscf.soscf">pyscf.soscf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.soscf/#module-pyscf.soscf.ciah">pyscf.soscf.ciah</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.soscf/#module-pyscf.soscf.newton_ah">pyscf.soscf.newton_ah</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm">pyscf.symm</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm.addons">pyscf.symm.addons</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm.basis">pyscf.symm.basis</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm.cg">pyscf.symm.cg</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm.Dmatrix">pyscf.symm.Dmatrix</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm.geom">pyscf.symm.geom</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm.param">pyscf.symm.param</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm.sph">pyscf.symm.sph</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tddft/#module-pyscf.tddft">pyscf.tddft</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf">pyscf.tdscf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf.common_slow">pyscf.tdscf.common_slow</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf.proxy">pyscf.tdscf.proxy</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf.rhf">pyscf.tdscf.rhf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf.rhf_slow">pyscf.tdscf.rhf_slow</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf.rks">pyscf.tdscf.rks</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf.uhf">pyscf.tdscf.uhf</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf.uks">pyscf.tdscf.uks</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools">pyscf.tools</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.c60struct">pyscf.tools.c60struct</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.chgcar">pyscf.tools.chgcar</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.chkfile_util">pyscf.tools.chkfile_util</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.cubegen">pyscf.tools.cubegen</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.dump_mat">pyscf.tools.dump_mat</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.fcidump">pyscf.tools.fcidump</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.mo_mapping">pyscf.tools.mo_mapping</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.molden">pyscf.tools.molden</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.ring">pyscf.tools.ring</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.wfn_format">pyscf.tools.wfn_format</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#module-pyscf.x2c">pyscf.x2c</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#module-pyscf.x2c.sfx2c1e">pyscf.x2c.sfx2c1e</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#module-pyscf.x2c.sfx2c1e_grad">pyscf.x2c.sfx2c1e_grad</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#module-pyscf.x2c.sfx2c1e_hess">pyscf.x2c.sfx2c1e_hess</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#module-pyscf.x2c.x2c">pyscf.x2c.x2c</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.chkfile_util.molden">molden() (in module pyscf.tools.chkfile_util)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.proxy.molecular_response">molecular_response() (in module pyscf.tdscf.proxy)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.proxy.molecular_response_ov">molecular_response_ov() (in module pyscf.tdscf.proxy)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.MolecularMFMixin">MolecularMFMixin (class in pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.mom_occ">mom_occ() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.mom_occ_">mom_occ_() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.MP2">MP2 (pyscf.scf.rohf.ROHF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.MP2">MP2() (pyscf.scf.ghf.GHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.MP2">(pyscf.scf.hf.RHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.MP2">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.msize">msize() (in module pyscf.tdscf.common_slow)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.VindTracker.msize">(pyscf.tdscf.common_slow.VindTracker property)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.chkfile_util.mulliken">mulliken() (in module pyscf.tools.chkfile_util)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.mulliken_meta">mulliken_meta() (in module pyscf.scf.ghf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.mulliken_meta">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.mulliken_meta">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.mulliken_meta">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.mulliken_meta">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.mulliken_meta">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.mulliken_meta_spin">mulliken_meta_spin() (in module pyscf.scf.uhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.mulliken_meta_spin">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.mulliken_pop">mulliken_pop() (in module pyscf.scf.dhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.mulliken_pop">(in module pyscf.scf.ghf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.mulliken_pop">(in module pyscf.scf.hf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.mulliken_pop">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.mulliken_pop">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.mulliken_pop">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.mulliken_pop">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.mulliken_pop">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.mulliken_pop_meta_lowdin_ao">mulliken_pop_meta_lowdin_ao() (in module pyscf.scf.hf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.mulliken_pop_meta_lowdin_ao">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.mulliken_pop_meta_lowdin_ao">(pyscf.scf.hf.SCF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.mulliken_spin_pop">mulliken_spin_pop() (in module pyscf.scf.uhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.mulliken_spin_pop">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.mulliken_spin_pop_meta_lowdin_ao">mulliken_spin_pop_meta_lowdin_ao() (in module pyscf.scf.uhf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.sph.multipoles">multipoles() (in module pyscf.symm.sph)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo_grad.multipoles1">multipoles1() (in module pyscf.solvent.ddcosmo_grad)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="N">N</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.VindTracker.ncalls">ncalls() (pyscf.tdscf.common_slow.VindTracker property)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.nelec">nelec() (pyscf.scf.rohf.ROHF property)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.nelec">(pyscf.scf.uhf.UHF property)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.nelectron_alpha">nelectron_alpha() (pyscf.scf.rohf.ROHF property)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.nelectron_alpha">(pyscf.scf.uhf.UHF property)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.newton">newton() (in module pyscf.scf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.newton_ah.newton">(in module pyscf.soscf.newton_ah)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.newton">(pyscf.scf.hf.SCF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.MolecularMFMixin.nmo">nmo() (pyscf.tdscf.common_slow.MolecularMFMixin property)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.PeriodicMFMixin.nmo">(pyscf.tdscf.common_slow.PeriodicMFMixin property)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.MolecularMFMixin.nmo_full">nmo_full() (pyscf.tdscf.common_slow.MolecularMFMixin property)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.PeriodicMFMixin.nmo_full">(pyscf.tdscf.common_slow.PeriodicMFMixin property)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.MolecularMFMixin.nocc">nocc() (pyscf.tdscf.common_slow.MolecularMFMixin property)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.PeriodicMFMixin.nocc">(pyscf.tdscf.common_slow.PeriodicMFMixin property)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.MolecularMFMixin.nocc_full">nocc_full() (pyscf.tdscf.common_slow.MolecularMFMixin property)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.PeriodicMFMixin.nocc_full">(pyscf.tdscf.common_slow.PeriodicMFMixin property)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.nroots">nroots() (pyscf.tdscf.rhf.TDA property)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.nstates">nstates (pyscf.tdscf.rhf.TDA attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.nuc_grad_method">nuc_grad_method() (pyscf.scf.dhf.DHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.nuc_grad_method">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.nuc_grad_method">(pyscf.scf.hf.RHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.nuc_grad_method">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.nuc_grad_method">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.nuc_grad_method">(pyscf.scf.uhf.UHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3.nuc_grad_method">(pyscf.semiempirical.mindo3.RMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.UMINDO3.nuc_grad_method">(pyscf.semiempirical.mindo3.UMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.DDCOSMO.nuc_grad_method">(pyscf.solvent.ddcosmo.DDCOSMO method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.DDPCM.nuc_grad_method">(pyscf.solvent.ddpcm.DDPCM method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.nuc_grad_method">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDHF.nuc_grad_method">(pyscf.tdscf.rhf.TDHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.TDA.nuc_grad_method">(pyscf.tdscf.rks.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.TDDFT.nuc_grad_method">(pyscf.tdscf.rks.TDDFT method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.TDDFTNoHybrid.nuc_grad_method">(pyscf.tdscf.rks.TDDFTNoHybrid method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDA.nuc_grad_method">(pyscf.tdscf.uhf.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDHF.nuc_grad_method">(pyscf.tdscf.uhf.TDHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.TDA.nuc_grad_method">(pyscf.tdscf.uks.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.TDDFT.nuc_grad_method">(pyscf.tdscf.uks.TDDFT method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.TDDFTNoHybrid.nuc_grad_method">(pyscf.tdscf.uks.TDDFTNoHybrid method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.proxy.orb2ov">orb2ov() (in module pyscf.tdscf.proxy)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.chgcar.orbital">orbital() (in module pyscf.tools.chgcar)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.cubegen.orbital">(in module pyscf.tools.cubegen)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.molden.orbital_coeff">orbital_coeff() (in module pyscf.tools.molden)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf_symm.GHF.orbsym">orbsym() (pyscf.scf.ghf_symm.GHF property)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedRHF.orbsym">(pyscf.scf.hf_symm.SymAdaptedRHF property)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.orbsym">(pyscf.scf.hf_symm.SymAdaptedROHF property)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF.orbsym">(pyscf.scf.uhf_symm.SymAdaptedUHF property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.molden.order_ao_index">order_ao_index() (in module pyscf.tools.molden)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.oscillator_strength">oscillator_strength() (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.oscillator_strength">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.pack_uniq_var">pack_uniq_var() (in module pyscf.scf.hf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.pack_uniq_var">(pyscf.soscf.ciah.CIAHOptimizer method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.parallel_vectors">parallel_vectors() (in module pyscf.symm.geom)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.molden.parse">parse() (in module pyscf.tools.molden)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.partial_cholesky_orth_">partial_cholesky_orth_() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.PE">PE() (in module pyscf.solvent)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.PeriodicMFMixin">PeriodicMFMixin (class in pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.proxy.PhysERI">PhysERI (class in pyscf.tdscf.proxy)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf_slow.PhysERI">(class in pyscf.tdscf.rhf_slow)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf_slow.PhysERI4">PhysERI4 (class in pyscf.tdscf.rhf_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf_slow.PhysERI8">PhysERI8 (class in pyscf.tdscf.rhf_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.sfx2c1e.SpinFreeX2C.picture_change">picture_change() (pyscf.x2c.sfx2c1e.SpinFreeX2C method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C.picture_change">(pyscf.x2c.x2c.X2C method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.pop">pop() (pyscf.scf.hf.SCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.project_dm_nr2nr">project_dm_nr2nr() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.project_dm_nr2r">project_dm_nr2r() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.project_dm_r2r">project_dm_r2r() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.project_mo_nr2nr">project_mo_nr2nr() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.project_mo_nr2r">project_mo_nr2r() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.project_mo_r2r">project_mo_r2r() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.newton_ah.project_mol">project_mol() (in module pyscf.soscf.newton_ah)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.prop">prop() (pyscf.rt.tdscf.RTTDSCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.proxy.PhysERI.proxy_choices">proxy_choices (pyscf.tdscf.proxy.PhysERI attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.proxy.TDProxy.proxy_eri">proxy_eri (pyscf.tdscf.proxy.TDProxy attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.proxy.PhysERI.proxy_is_double">proxy_is_double() (pyscf.tdscf.proxy.PhysERI method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.proxy.PhysERI.proxy_response">proxy_response() (pyscf.tdscf.proxy.PhysERI method)</a>
+</li>
+      <li>
+    pyscf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf/#module-pyscf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.post_scf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf/#module-pyscf.post_scf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.rt
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.rt/#module-pyscf.rt">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.rt.tdfields
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.rt/#module-pyscf.rt.tdfields">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.rt.tdscf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.rt/#module-pyscf.rt.tdscf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.addons
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.addons">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.atom_hf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.atom_hf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.chkfile
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.chkfile">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.cphf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.cphf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.dhf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.dhf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.diis
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.diis">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.ghf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.ghf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.ghf_symm
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.ghf_symm">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.hf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.hf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.hf_symm
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.hf_symm">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.jk
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.jk">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.newton_ah
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.newton_ah">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.rohf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.rohf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.stability
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.stability">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.stability_slow
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.stability_slow">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.ucphf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.ucphf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.uhf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.uhf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.uhf_symm
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.uhf_symm">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.scf.x2c
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#module-pyscf.scf.x2c">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.semiempirical
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#module-pyscf.semiempirical">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.semiempirical.mindo3
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#module-pyscf.semiempirical.mindo3">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.semiempirical.mopac_param
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#module-pyscf.semiempirical.mopac_param">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.semiempirical.rmindo3_grad
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#module-pyscf.semiempirical.rmindo3_grad">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.semiempirical.umindo3_grad
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#module-pyscf.semiempirical.umindo3_grad">module</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    pyscf.sgx
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.sgx/#module-pyscf.sgx">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.sgx.sgx
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.sgx/#module-pyscf.sgx.sgx">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.sgx.sgx_jk
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.sgx/#module-pyscf.sgx.sgx_jk">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.solvent
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#module-pyscf.solvent">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.solvent.ddcosmo
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#module-pyscf.solvent.ddcosmo">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.solvent.ddcosmo_grad
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#module-pyscf.solvent.ddcosmo_grad">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.solvent.ddpcm
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#module-pyscf.solvent.ddpcm">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.soscf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.soscf/#module-pyscf.soscf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.soscf.ciah
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.soscf/#module-pyscf.soscf.ciah">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.soscf.newton_ah
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.soscf/#module-pyscf.soscf.newton_ah">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.symm
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.symm.addons
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm.addons">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.symm.basis
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm.basis">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.symm.cg
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm.cg">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.symm.Dmatrix
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm.Dmatrix">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.symm.geom
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm.geom">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.symm.param
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm.param">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.symm.sph
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.symm/#module-pyscf.symm.sph">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tddft
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tddft/#module-pyscf.tddft">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tdscf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tdscf.common_slow
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf.common_slow">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tdscf.proxy
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf.proxy">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tdscf.rhf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf.rhf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tdscf.rhf_slow
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf.rhf_slow">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tdscf.rks
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf.rks">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tdscf.uhf
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf.uhf">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tdscf.uks
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#module-pyscf.tdscf.uks">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tools
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tools.c60struct
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.c60struct">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tools.chgcar
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.chgcar">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tools.chkfile_util
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.chkfile_util">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tools.cubegen
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.cubegen">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tools.dump_mat
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.dump_mat">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tools.fcidump
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.fcidump">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tools.mo_mapping
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.mo_mapping">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tools.molden
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.molden">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tools.ring
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.ring">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.tools.wfn_format
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#module-pyscf.tools.wfn_format">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.x2c
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#module-pyscf.x2c">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.x2c.sfx2c1e
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#module-pyscf.x2c.sfx2c1e">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.x2c.sfx2c1e_grad
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#module-pyscf.x2c.sfx2c1e_grad">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.x2c.sfx2c1e_hess
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#module-pyscf.x2c.sfx2c1e_hess">module</a>
+</li>
+      </ul></li>
+      <li>
+    pyscf.x2c.x2c
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#module-pyscf.x2c.x2c">module</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.c60struct.r2edge">r2edge() (in module pyscf.tools.c60struct)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.VindTracker.ratio">ratio() (pyscf.tdscf.common_slow.VindTracker property)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.RDHF">RDHF (class in pyscf.scf.dhf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.fcidump.read">read() (in module pyscf.tools.fcidump)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.molden.read">(in module pyscf.tools.molden)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.chgcar.CHGCAR.read">(pyscf.tools.chgcar.CHGCAR method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.cubegen.Cube.read">(pyscf.tools.cubegen.Cube method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.readparams">readparams() (pyscf.rt.tdscf.RTTDSCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.sph.real2spinor">real2spinor() (in module pyscf.symm.sph)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.sph.real2spinor_whole">real2spinor_whole() (in module pyscf.symm.sph)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.sph.real_sph_vec">real_sph_vec() (in module pyscf.symm.sph)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.regularize_xt">regularize_xt() (in module pyscf.solvent.ddcosmo)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.regularize_xt">(in module pyscf.solvent.ddpcm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.DDCOSMO.regularize_xt">(pyscf.solvent.ddcosmo.DDCOSMO method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddpcm.DDPCM.regularize_xt">(pyscf.solvent.ddpcm.DDPCM method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo_grad.regularize_xt1">regularize_xt1() (in module pyscf.solvent.ddcosmo_grad)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.molden.remove_high_l">remove_high_l() (in module pyscf.tools.molden)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.remove_linear_dep">remove_linear_dep() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.addons.remove_linear_dep_">remove_linear_dep_() (in module pyscf.scf.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.reset">reset() (pyscf.scf.dhf.DHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.reset">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3.reset">(pyscf.semiempirical.mindo3.RMINDO3 method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.sgx/#pyscf.sgx.sgx.SGX.reset">(pyscf.sgx.sgx.SGX method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.DDCOSMO.reset">(pyscf.solvent.ddcosmo.DDCOSMO method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.VindTracker.reset">(pyscf.tdscf.common_slow.VindTracker method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.reset">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C.reset">(pyscf.x2c.x2c.X2C method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF">RHF (class in pyscf.scf.hf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.RHF">(in module pyscf.scf.dhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.RHF">(in module pyscf.scf.hf_symm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.RHF">(in module pyscf.x2c.x2c)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.RHF">RHF() (in module pyscf.scf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability.rhf_external">rhf_external() (in module pyscf.scf.stability)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability_slow.rhf_external">(in module pyscf.scf.stability_slow)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability.rhf_internal">rhf_internal() (in module pyscf.scf.stability)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability_slow.rhf_internal">(in module pyscf.scf.stability_slow)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability.rhf_stability">rhf_stability() (in module pyscf.scf.stability)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability_slow.rhf_stability">(in module pyscf.scf.stability_slow)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.RKS">RKS (in module pyscf.x2c.x2c)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.RKS">RKS() (in module pyscf.scf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3">RMINDO3 (class in pyscf.semiempirical.mindo3)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF">ROHF (class in pyscf.scf.rohf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.ROHF">(in module pyscf.scf.hf_symm)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ROHF">ROHF() (in module pyscf.scf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability.rohf_external">rohf_external() (in module pyscf.scf.stability)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability.rohf_internal">rohf_internal() (in module pyscf.scf.stability)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability.rohf_stability">rohf_stability() (in module pyscf.scf.stability)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ROKS">ROKS() (in module pyscf.scf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.rotate_orb_cc">rotate_orb_cc() (in module pyscf.soscf.ciah)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.rotation_mat">rotation_mat() (in module pyscf.symm.geom)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.RotationAxisNotFound">RotationAxisNotFound</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.c60struct.rotmaty">rotmaty() (in module pyscf.tools.c60struct)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.c60struct.rotmatz">rotmatz() (in module pyscf.tools.c60struct)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.addons.route">route() (in module pyscf.symm.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.RPA">RPA (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.RPA">(in module pyscf.tdscf.rks)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.RPA">(in module pyscf.tdscf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.RPA">(in module pyscf.tdscf.uks)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.RPA">RPA() (in module pyscf.tdscf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF">RTTDSCF (class in pyscf.rt.tdscf)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF">SCF (class in pyscf.scf.hf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.atom_hf.AtomSphericAverageRHF.scf">scf() (pyscf.scf.atom_hf.AtomSphericAverageRHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.scf">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.HF1e.scf">(pyscf.scf.dhf.HF1e method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.scf">(pyscf.scf.hf.SCF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.HF1e.scf">(pyscf.scf.hf_symm.HF1e method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.HF1e.scf">(pyscf.scf.rohf.HF1e method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.HF1e.scf">(pyscf.scf.uhf.HF1e method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.HF1e.scf">(pyscf.scf.uhf_symm.HF1e method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.diis.SCF_DIIS">SCF_DIIS (in module pyscf.scf.diis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.fcidump.scf_from_fcidump">scf_from_fcidump() (in module pyscf.tools.fcidump)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.diis.SCFDIIS">SCFDIIS (in module pyscf.scf.diis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.SymmSys.search_c2x">search_c2x() (pyscf.symm.geom.SymmSys method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.SymmSys.search_c_highest">search_c_highest() (pyscf.symm.geom.SymmSys method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.SymmSys.search_mirrorx">search_mirrorx() (pyscf.symm.geom.SymmSys method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.SymmSys.search_possible_rotations">search_possible_rotations() (pyscf.symm.geom.SymmSys method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.sfx2c">sfx2c() (in module pyscf.scf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.sfx2c1e.sfx2c">(in module pyscf.x2c.sfx2c1e)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3.sfx2c1e">sfx2c1e (pyscf.semiempirical.mindo3.RMINDO3 attribute)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.UMINDO3.sfx2c1e">(pyscf.semiempirical.mindo3.UMINDO3 attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.sfx2c1e">sfx2c1e() (in module pyscf.scf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.sfx2c1e.sfx2c1e">(in module pyscf.x2c.sfx2c1e)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.sfx2c1e">(pyscf.scf.dhf.DHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.sfx2c1e">(pyscf.scf.hf.SCF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.sgx/#pyscf.sgx.sgx.SGX">SGX (class in pyscf.sgx.sgx)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.sgx/#pyscf.sgx.sgx.sgx_fit">sgx_fit() (in module pyscf.sgx.sgx)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.shift_atom">shift_atom() (in module pyscf.symm.geom)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.singlet">singlet (pyscf.tdscf.rhf.TDA attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.so2ao_mo_coeff">so2ao_mo_coeff() (in module pyscf.scf.hf_symm)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.cphf.solve">solve() (in module pyscf.scf.cphf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ucphf.solve">(in module pyscf.scf.ucphf)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.cphf.solve_nos1">solve_nos1() (in module pyscf.scf.cphf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ucphf.solve_nos1">(in module pyscf.scf.ucphf)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.cphf.solve_withs1">solve_withs1() (in module pyscf.scf.cphf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ucphf.solve_withs1">(in module pyscf.scf.ucphf)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.sort_coords">sort_coords() (in module pyscf.symm.geom)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.sph.sph2spinor">sph2spinor() (in module pyscf.symm.sph)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.sph.sph2spinor_coeff">sph2spinor_coeff() (in module pyscf.symm.sph)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.sph.sph_pure2real">sph_pure2real() (in module pyscf.symm.sph)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.sph.sph_real2pure">sph_real2pure() (in module pyscf.symm.sph)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.spin_square">spin_square() (in module pyscf.scf.ghf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.spin_square">(in module pyscf.scf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.spin_square">(pyscf.scf.ghf.GHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.spin_square">(pyscf.scf.hf.RHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.spin_square">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.HF1e.spin_square">(pyscf.scf.uhf.HF1e method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.spin_square">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.sfx2c1e.SpinFreeX2C">SpinFreeX2C (class in pyscf.x2c.sfx2c1e)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.split_rk4_step_mmut">split_rk4_step_mmut() (pyscf.rt.tdscf.RTTDSCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.MolecularMFMixin.squeeze">squeeze() (pyscf.tdscf.common_slow.MolecularMFMixin method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.ghf.GHF.stability">stability() (pyscf.scf.ghf.GHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.stability">(pyscf.scf.hf.RHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.stability">(pyscf.scf.rohf.ROHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.stability">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.addons.std_symb">std_symb() (in module pyscf.symm.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.subgroup">subgroup() (in module pyscf.symm.geom)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedRHF">SymAdaptedRHF (class in pyscf.scf.hf_symm)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF">SymAdaptedROHF (class in pyscf.scf.hf_symm)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF">SymAdaptedUHF (class in pyscf.scf.uhf_symm)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.basis.symm_adapted_basis">symm_adapted_basis() (in module pyscf.symm.basis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.symm_identical_atoms">symm_identical_atoms() (in module pyscf.symm.geom)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.symm_ops">symm_ops() (in module pyscf.symm.geom)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.SymmSys.symmetric_for">symmetric_for() (pyscf.symm.geom.SymmSys method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDERIMatrixBlocks.symmetries">symmetries (pyscf.tdscf.common_slow.TDERIMatrixBlocks attribute)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf_slow.PhysERI4.symmetries">(pyscf.tdscf.rhf_slow.PhysERI4 attribute)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf_slow.PhysERI8.symmetries">(pyscf.tdscf.rhf_slow.PhysERI8 attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.basis.symmetrize_matrix">symmetrize_matrix() (in module pyscf.symm.basis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.addons.symmetrize_orb">symmetrize_orb() (in module pyscf.symm.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.addons.symmetrize_space">symmetrize_space() (in module pyscf.symm.addons)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.geom.SymmSys">SymmSys (class in pyscf.symm.geom)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.TD">TD() (in module pyscf.tdscf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA">TDA (class in pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.TDA">(class in pyscf.tdscf.rks)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDA">(class in pyscf.tdscf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.TDA">(class in pyscf.tdscf.uks)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.TDA">(pyscf.scf.hf_symm.SymAdaptedROHF attribute)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.TDA">(pyscf.scf.rohf.ROHF attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.TDA">TDA() (in module pyscf.tdscf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.TDA">(pyscf.scf.hf.RHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.TDA">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDBase">TDBase (class in pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.TDDFT">TDDFT (class in pyscf.tdscf.rks)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.TDDFT">(class in pyscf.tdscf.uks)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.TDDFT">TDDFT() (in module pyscf.tdscf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.tddft">tddft() (in module pyscf.tdscf.rks)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.tddft">(in module pyscf.tdscf.uks)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.TDDFTNoHybrid">TDDFTNoHybrid (class in pyscf.tdscf.rks)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.TDDFTNoHybrid">(class in pyscf.tdscf.uks)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.RTTDSCF.tddftstep">tddftstep() (pyscf.rt.tdscf.RTTDSCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDERIMatrixBlocks">TDERIMatrixBlocks (class in pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.TDH">TDH (in module pyscf.tdscf.rks)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.TDH">(in module pyscf.tdscf.uks)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDHF">TDHF (class in pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDHF">(class in pyscf.tdscf.uhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.TDHF">(pyscf.scf.hf_symm.SymAdaptedROHF attribute)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.rohf.ROHF.TDHF">(pyscf.scf.rohf.ROHF attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.TDHF">TDHF() (in module pyscf.tdscf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.RHF.TDHF">(pyscf.scf.hf.RHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF.TDHF">(pyscf.scf.uhf.UHF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDMatrixBlocks.tdhf_ab_form">tdhf_ab_form() (pyscf.tdscf.common_slow.TDMatrixBlocks method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDERIMatrixBlocks.tdhf_diag">tdhf_diag() (pyscf.tdscf.common_slow.TDERIMatrixBlocks method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDMatrixBlocks.tdhf_full_form">tdhf_full_form() (pyscf.tdscf.common_slow.TDMatrixBlocks method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDMatrixBlocks.tdhf_mk_form">tdhf_mk_form() (pyscf.tdscf.common_slow.TDMatrixBlocks method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDERIMatrixBlocks.tdhf_primary_form">tdhf_primary_form() (pyscf.tdscf.common_slow.TDERIMatrixBlocks method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDMatrixBlocks.tdhf_primary_form">(pyscf.tdscf.common_slow.TDMatrixBlocks method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDProxyMatrixBlocks.tdhf_primary_form">(pyscf.tdscf.common_slow.TDProxyMatrixBlocks method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.proxy.PhysERI.tdhf_primary_form">(pyscf.tdscf.proxy.PhysERI method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDMatrixBlocks">TDMatrixBlocks (class in pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.proxy.TDProxy">TDProxy (class in pyscf.tdscf.proxy)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDProxyMatrixBlocks">TDProxyMatrixBlocks (class in pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf_slow.TDRHF">TDRHF (class in pyscf.tdscf.rhf_slow)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDRHF">(in module pyscf.tdscf.rhf)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rks.TDRKS">TDRKS (in module pyscf.tdscf.rks)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uhf.TDUHF">TDUHF (in module pyscf.tdscf.uhf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.uks.TDUKS">TDUKS (in module pyscf.tdscf.uks)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.VindTracker.text_stats">text_stats() (pyscf.tdscf.common_slow.VindTracker method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.time_reversal_matrix">time_reversal_matrix() (in module pyscf.scf.dhf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.to_ghf">to_ghf() (pyscf.scf.hf.SCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.to_gks">to_gks() (pyscf.scf.hf.SCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.to_rhf">to_rhf() (pyscf.scf.hf.SCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.to_rks">to_rks() (pyscf.scf.hf.SCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.fcidump.to_scf">to_scf() (in module pyscf.tools.fcidump)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.to_uhf">to_uhf() (pyscf.scf.hf.SCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.to_uks">to_uks() (pyscf.scf.hf.SCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.symm/#pyscf.symm.basis.tot_parity_odd">tot_parity_odd() (in module pyscf.symm.basis)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.transition_dipole">transition_dipole() (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.transition_dipole">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.transition_magnetic_dipole">transition_magnetic_dipole() (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.transition_magnetic_dipole">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.transition_magnetic_quadrupole">transition_magnetic_quadrupole() (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.transition_magnetic_quadrupole">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.transition_octupole">transition_octupole() (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.transition_octupole">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.transition_quadrupole">transition_quadrupole() (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.transition_quadrupole">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.transition_velocity_dipole">transition_velocity_dipole() (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.transition_velocity_dipole">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.transition_velocity_octupole">transition_velocity_octupole() (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.transition_velocity_octupole">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.transition_velocity_quadrupole">transition_velocity_quadrupole() (in module pyscf.tdscf.rhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf.TDA.transition_velocity_quadrupole">(pyscf.tdscf.rhf.TDA method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.transmat">transmat() (in module pyscf.rt.tdscf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.rt/#pyscf.rt.tdscf.trdot">trdot() (in module pyscf.rt.tdscf)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.UDHF">UDHF (in module pyscf.scf.dhf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf.UHF">UHF (class in pyscf.scf.uhf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.UHF">(in module pyscf.scf.dhf)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.UHF">(in module pyscf.scf.uhf_symm)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.UHF">(in module pyscf.x2c.x2c)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.UHF">UHF() (in module pyscf.scf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability.uhf_external">uhf_external() (in module pyscf.scf.stability)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability_slow.uhf_external">(in module pyscf.scf.stability_slow)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability.uhf_internal">uhf_internal() (in module pyscf.scf.stability)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability_slow.uhf_internal">(in module pyscf.scf.stability_slow)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability.uhf_stability">uhf_stability() (in module pyscf.scf.stability)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.stability_slow.uhf_stability">(in module pyscf.scf.stability_slow)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.UKS">UKS (in module pyscf.x2c.x2c)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.UKS">UKS() (in module pyscf.scf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.UMINDO3">UMINDO3 (class in pyscf.semiempirical.mindo3)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.uniq_var_indices">uniq_var_indices() (in module pyscf.scf.hf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.unpack_uniq_var">unpack_uniq_var() (in module pyscf.scf.hf)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.soscf/#pyscf.soscf.ciah.CIAHOptimizer.unpack_uniq_var">(pyscf.soscf.ciah.CIAHOptimizer method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.diis.ADIIS.update">update() (pyscf.scf.diis.ADIIS method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.diis.CDIIS.update">(pyscf.scf.diis.CDIIS method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.diis.EDIIS.update">(pyscf.scf.diis.EDIIS method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.update">(pyscf.scf.hf.SCF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.update_">update_() (pyscf.scf.hf.SCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.update_from_chk">update_from_chk() (pyscf.scf.hf.SCF method)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.update_from_chk_">update_from_chk_() (pyscf.scf.hf.SCF method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDBase.v2a">v2a (pyscf.tdscf.common_slow.TDBase attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.proxy.TDProxy.v2a">v2a() (pyscf.tdscf.proxy.TDProxy static method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf_slow.TDRHF.v2a">(pyscf.tdscf.rhf_slow.TDRHF static method)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.rhf_slow.vector_to_amplitudes">vector_to_amplitudes() (in module pyscf.tdscf.rhf_slow)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.TDBase.vector_to_amplitudes">(pyscf.tdscf.common_slow.TDBase method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tdscf/#pyscf.tdscf.common_slow.VindTracker">VindTracker (class in pyscf.tdscf.common_slow)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.solvent/#pyscf.solvent.ddcosmo.DDCOSMO.vpcm">vpcm() (pyscf.solvent.ddcosmo.DDCOSMO property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedRHF.wfnsym">wfnsym() (pyscf.scf.hf_symm.SymAdaptedRHF property)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf_symm.SymAdaptedROHF.wfnsym">(pyscf.scf.hf_symm.SymAdaptedROHF property)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.uhf_symm.SymAdaptedUHF.wfnsym">(pyscf.scf.uhf_symm.SymAdaptedUHF property)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.with_breit">with_breit (pyscf.scf.dhf.DHF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.with_gaunt">with_gaunt (pyscf.scf.dhf.DHF attribute)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.with_ssss">with_ssss (pyscf.scf.dhf.DHF attribute)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.chgcar.CHGCAR.write">write() (pyscf.tools.chgcar.CHGCAR method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.cubegen.Cube.write">(pyscf.tools.cubegen.Cube method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.wfn_format.write_ci">write_ci() (in module pyscf.tools.wfn_format)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.fcidump.write_eri">write_eri() (in module pyscf.tools.fcidump)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.fcidump.write_hcore">write_hcore() (in module pyscf.tools.fcidump)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.fcidump.write_head">write_head() (in module pyscf.tools.fcidump)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.tools/#pyscf.tools.wfn_format.write_mo">write_mo() (in module pyscf.tools.wfn_format)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="X">X</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C">X2C (class in pyscf.x2c.x2c)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3.x2c">x2c (pyscf.semiempirical.mindo3.RMINDO3 attribute)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.UMINDO3.x2c">(pyscf.semiempirical.mindo3.UMINDO3 attribute)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.X2C">X2C() (in module pyscf.scf)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.x2c">x2c() (pyscf.scf.dhf.DHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.RDHF.x2c">(pyscf.scf.dhf.RDHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.x2c">(pyscf.scf.hf.SCF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.RMINDO3.x2c1e">x2c1e (pyscf.semiempirical.mindo3.RMINDO3 attribute)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.semiempirical/#pyscf.semiempirical.mindo3.UMINDO3.x2c1e">(pyscf.semiempirical.mindo3.UMINDO3 attribute)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.DHF.x2c1e">x2c1e() (pyscf.scf.dhf.DHF method)</a>
+
+      <ul>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.dhf.RDHF.x2c1e">(pyscf.scf.dhf.RDHF method)</a>
+</li>
+        <li><a href="../pyscf_api_docs/pyscf.scf/#pyscf.scf.hf.SCF.x2c1e">(pyscf.scf.hf.SCF method)</a>
+</li>
+      </ul></li>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_RHF">X2C_RHF (class in pyscf.x2c.x2c)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_RKS">X2C_RKS (class in pyscf.x2c.x2c)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UHF">X2C_UHF (class in pyscf.x2c.x2c)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C_UKS">X2C_UKS (class in pyscf.x2c.x2c)</a>
+</li>
+      <li><a href="../pyscf_api_docs/pyscf.x2c/#pyscf.x2c.x2c.X2C.xuncontract">xuncontract (pyscf.x2c.x2c.X2C attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2021, James E. T. Smith.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>
