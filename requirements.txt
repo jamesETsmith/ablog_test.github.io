@@ -1,0 +1,4 @@
+pyscf
+ablog
+myst-parser
+sphinx-material

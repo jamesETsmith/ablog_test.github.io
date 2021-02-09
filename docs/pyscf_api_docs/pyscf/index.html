@@ -57,7 +57,7 @@
     <link rel="author" title="About these documents" href="../../about/" />
     <link rel="index" title="Index" href="../../genindex/" />
     <link rel="search" title="Search" href="../../search/" />
-    <link rel="next" title="pyscf.rt package" href="../pyscf.rt/" />
+    <link rel="next" title="pyscf.adc package" href="../pyscf.adc/" />
     <link rel="prev" title="PySCF Blog" href="../../blog_wrapper/" /> 
   
    
@@ -89,7 +89,7 @@
 
   </head>
   <body dir=ltr
-        data-md-color-primary=indigo data-md-color-accent=blue>
+        data-md-color-primary=indigo data-md-color-accent=yellow>
   
   <svg class="md-svg">
     <defs data-children-count="0">
@@ -341,6 +341,737 @@
 <h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.adc/">pyscf.adc package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.adc/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.adc/#module-pyscf.adc.uadc">pyscf.adc.uadc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.adc/#module-pyscf.adc.uadc_ao2mo">pyscf.adc.uadc_ao2mo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.adc/#module-pyscf.adc">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.adc/#algebraic-diagrammatic-construction">Algebraic Diagrammatic Construction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.ao2mo/">pyscf.ao2mo package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ao2mo/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ao2mo/#module-pyscf.ao2mo.addons">pyscf.ao2mo.addons module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ao2mo/#module-pyscf.ao2mo.incore">pyscf.ao2mo.incore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ao2mo/#module-pyscf.ao2mo.outcore">pyscf.ao2mo.outcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ao2mo/#module-pyscf.ao2mo.r_outcore">pyscf.ao2mo.r_outcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ao2mo/#module-pyscf.ao2mo.semi_incore">pyscf.ao2mo.semi_incore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ao2mo/#module-pyscf.ao2mo">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.ao2mo/#general-integral-transformation-module">General Integral transformation module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.cc/">pyscf.cc package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.addons">pyscf.cc.addons module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.ccd">pyscf.cc.ccd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.ccsd">pyscf.cc.ccsd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.ccsd_lambda">pyscf.cc.ccsd_lambda module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.ccsd_rdm">pyscf.cc.ccsd_rdm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.ccsd_rdm_slow">pyscf.cc.ccsd_rdm_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.ccsd_t">pyscf.cc.ccsd_t module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.ccsd_t_lambda_slow">pyscf.cc.ccsd_t_lambda_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.ccsd_t_rdm_slow">pyscf.cc.ccsd_t_rdm_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.ccsd_t_slow">pyscf.cc.ccsd_t_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.dfccsd">pyscf.cc.dfccsd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.eom_gccsd">pyscf.cc.eom_gccsd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.eom_rccsd">pyscf.cc.eom_rccsd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.eom_rccsd_hybrid">pyscf.cc.eom_rccsd_hybrid module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.eom_uccsd">pyscf.cc.eom_uccsd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.gccsd">pyscf.cc.gccsd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.gccsd_lambda">pyscf.cc.gccsd_lambda module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.gccsd_rdm">pyscf.cc.gccsd_rdm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.gccsd_t">pyscf.cc.gccsd_t module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.gccsd_t_lambda">pyscf.cc.gccsd_t_lambda module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.gccsd_t_rdm">pyscf.cc.gccsd_t_rdm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.gccsd_t_slow">pyscf.cc.gccsd_t_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.gintermediates">pyscf.cc.gintermediates module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.rccsd">pyscf.cc.rccsd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.rccsd_hybrid">pyscf.cc.rccsd_hybrid module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.rccsd_lambda">pyscf.cc.rccsd_lambda module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.rccsd_slow">pyscf.cc.rccsd_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.rintermediates">pyscf.cc.rintermediates module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.uccsd">pyscf.cc.uccsd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.uccsd_lambda">pyscf.cc.uccsd_lambda module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.uccsd_rdm">pyscf.cc.uccsd_rdm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.uccsd_slow">pyscf.cc.uccsd_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.uccsd_t">pyscf.cc.uccsd_t module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.uccsd_t_lambda">pyscf.cc.uccsd_t_lambda module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.uccsd_t_rdm">pyscf.cc.uccsd_t_rdm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.uccsd_t_slow">pyscf.cc.uccsd_t_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.uintermediates">pyscf.cc.uintermediates module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc.uintermediates_slow">pyscf.cc.uintermediates_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cc/#module-pyscf.cc">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.cc/#coupled-cluster">Coupled Cluster</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.ccn/">pyscf.ccn package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ccn/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ccn/#module-pyscf.ccn.cc">pyscf.ccn.cc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ccn/#module-pyscf.ccn.equations">pyscf.ccn.equations module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ccn/#module-pyscf.ccn.pyscf_helpers">pyscf.ccn.pyscf_helpers module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ccn/#module-pyscf.ccn.test">pyscf.ccn.test module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ccn/#module-pyscf.ccn.util">pyscf.ccn.util module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ccn/#module-pyscf.ccn">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.ci/">pyscf.ci package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ci/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ci/#module-pyscf.ci.addons">pyscf.ci.addons module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ci/#module-pyscf.ci.cisd">pyscf.ci.cisd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ci/#module-pyscf.ci.gcisd">pyscf.ci.gcisd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ci/#module-pyscf.ci.ucisd">pyscf.ci.ucisd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.ci/#module-pyscf.ci">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.cornell_shci/">pyscf.cornell_shci package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cornell_shci/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cornell_shci/#pyscf-cornell-shci-shci-module">pyscf.cornell_shci.shci module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cornell_shci/#module-pyscf.cornell_shci.symmetry">pyscf.cornell_shci.symmetry module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.cornell_shci/#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.data/">pyscf.data package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.data/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.data/#module-pyscf.data.elements">pyscf.data.elements module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.data/#module-pyscf.data.gyro">pyscf.data.gyro module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.data/#module-pyscf.data.nist">pyscf.data.nist module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.data/#module-pyscf.data.nucprop">pyscf.data.nucprop module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.data/#module-pyscf.data.radii">pyscf.data.radii module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.data/#module-pyscf.data">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.df/">pyscf.df package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.df/#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.df.grad/">pyscf.df.grad package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.df.grad/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.df.grad/#module-pyscf.df.grad.rhf">pyscf.df.grad.rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.df.grad/#module-pyscf.df.grad.rks">pyscf.df.grad.rks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.df.grad/#module-pyscf.df.grad.uhf">pyscf.df.grad.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.df.grad/#module-pyscf.df.grad.uks">pyscf.df.grad.uks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.df.grad/#module-pyscf.df.grad">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.df.hessian/">pyscf.df.hessian package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.df.hessian/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.df.hessian/#module-pyscf.df.hessian.rhf">pyscf.df.hessian.rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.df.hessian/#module-pyscf.df.hessian.rks">pyscf.df.hessian.rks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.df.hessian/#module-pyscf.df.hessian.uhf">pyscf.df.hessian.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.df.hessian/#module-pyscf.df.hessian.uks">pyscf.df.hessian.uks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.df.hessian/#module-pyscf.df.hessian">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.df/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.df/#module-pyscf.df.addons">pyscf.df.addons module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.df/#module-pyscf.df.df">pyscf.df.df module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.df/#module-pyscf.df.df_jk">pyscf.df.df_jk module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.df/#module-pyscf.df.incore">pyscf.df.incore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.df/#module-pyscf.df.outcore">pyscf.df.outcore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.df/#module-pyscf.df.r_incore">pyscf.df.r_incore module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.df/#module-pyscf.df">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.df/#density-fitting">Density fitting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.dft/">pyscf.dft package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.dft.xc/">pyscf.dft.xc package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.dft.xc/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.dft.xc/#module-pyscf.dft.xc.utils">pyscf.dft.xc.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.dft.xc/#module-pyscf.dft.xc">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.dks">pyscf.dft.dks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.gen_grid">pyscf.dft.gen_grid module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#pyscf-dft-gen-libxc-param-module">pyscf.dft.gen_libxc_param module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#pyscf-dft-gen-xcfun-param-module">pyscf.dft.gen_xcfun_param module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.gks">pyscf.dft.gks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.gks_symm">pyscf.dft.gks_symm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.libxc">pyscf.dft.libxc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.numint">pyscf.dft.numint module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.r_numint">pyscf.dft.r_numint module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.radi">pyscf.dft.radi module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.rks">pyscf.dft.rks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.rks_symm">pyscf.dft.rks_symm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.roks">pyscf.dft.roks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.sap">pyscf.dft.sap module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.sap_data">pyscf.dft.sap_data module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.uks">pyscf.dft.uks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.uks_symm">pyscf.dft.uks_symm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft.xcfun">pyscf.dft.xcfun module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dft/#module-pyscf.dft">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.dft/#density-functional-theory">Density functional theory</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.dftd3/">pyscf.dftd3 package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dftd3/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dftd3/#pyscf-dftd3-itrf-module">pyscf.dftd3.itrf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.dftd3/#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.doci/">pyscf.doci package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.doci/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.doci/#module-pyscf.doci.doci_mcscf">pyscf.doci.doci_mcscf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.doci/#module-pyscf.doci.doci_slow">pyscf.doci.doci_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.doci/#module-pyscf.doci">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.eph/">pyscf.eph package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.eph/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.eph/#module-pyscf.eph.eph_fd">pyscf.eph.eph_fd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.eph/#module-pyscf.eph.rhf">pyscf.eph.rhf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.eph/#module-pyscf.eph.rks">pyscf.eph.rks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.eph/#module-pyscf.eph.uhf">pyscf.eph.uhf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.eph/#module-pyscf.eph.uks">pyscf.eph.uks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.eph/#module-pyscf.eph">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.extras/">pyscf.extras package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.extras/#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.extras.mbd/">pyscf.extras.mbd package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.extras.mbd/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.extras.mbd/#module-pyscf.extras.mbd.mbd">pyscf.extras.mbd.mbd module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.extras.mbd/#module-pyscf.extras.mbd.vdw_param">pyscf.extras.mbd.vdw_param module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.extras.mbd/#module-pyscf.extras.mbd">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.extras/#module-pyscf.extras">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.fci/">pyscf.fci package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.addons">pyscf.fci.addons module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.cistring">pyscf.fci.cistring module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.direct_ep">pyscf.fci.direct_ep module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.direct_nosym">pyscf.fci.direct_nosym module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.direct_spin0">pyscf.fci.direct_spin0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.direct_spin0_symm">pyscf.fci.direct_spin0_symm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.direct_spin1">pyscf.fci.direct_spin1 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.direct_spin1_symm">pyscf.fci.direct_spin1_symm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.direct_uhf">pyscf.fci.direct_uhf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.fci_slow">pyscf.fci.fci_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.rdm">pyscf.fci.rdm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.selected_ci">pyscf.fci.selected_ci module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.selected_ci_slow">pyscf.fci.selected_ci_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.selected_ci_spin0">pyscf.fci.selected_ci_spin0 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.selected_ci_spin0_symm">pyscf.fci.selected_ci_spin0_symm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.selected_ci_symm">pyscf.fci.selected_ci_symm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci.spin_op">pyscf.fci.spin_op module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.fci/#module-pyscf.fci">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.geomopt/">pyscf.geomopt package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.geomopt/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.geomopt/#module-pyscf.geomopt.addons">pyscf.geomopt.addons module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.geomopt/#pyscf-geomopt-berny-solver-module">pyscf.geomopt.berny_solver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.geomopt/#pyscf-geomopt-geometric-solver-module">pyscf.geomopt.geometric_solver module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.geomopt/#module-pyscf.geomopt">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.grad/">pyscf.grad package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.casci">pyscf.grad.casci module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.casscf">pyscf.grad.casscf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.ccsd">pyscf.grad.ccsd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.ccsd_slow">pyscf.grad.ccsd_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.ccsd_t">pyscf.grad.ccsd_t module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.cisd">pyscf.grad.cisd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.dhf">pyscf.grad.dhf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.mp2">pyscf.grad.mp2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.rhf">pyscf.grad.rhf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.rks">pyscf.grad.rks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.rohf">pyscf.grad.rohf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.roks">pyscf.grad.roks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.tdrhf">pyscf.grad.tdrhf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.tdrks">pyscf.grad.tdrks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.tduhf">pyscf.grad.tduhf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.tduks">pyscf.grad.tduks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.uccsd">pyscf.grad.uccsd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.uccsd_t">pyscf.grad.uccsd_t module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.ucisd">pyscf.grad.ucisd module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.uhf">pyscf.grad.uhf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.uks">pyscf.grad.uks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad.ump2">pyscf.grad.ump2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.grad/#module-pyscf.grad">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.grad/#analytical-nuclear-gradients">Analytical nuclear gradients</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.gto/">pyscf.gto package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.gto/#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.gto.basis/">pyscf.gto.basis package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.gto.basis/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.gto.basis/#module-pyscf.gto.basis.dyall_dz">pyscf.gto.basis.dyall_dz module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.gto.basis/#module-pyscf.gto.basis.dyall_qz">pyscf.gto.basis.dyall_qz module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.gto.basis/#module-pyscf.gto.basis.dyall_tz">pyscf.gto.basis.dyall_tz module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.gto.basis/#module-pyscf.gto.basis.dzp_dunning">pyscf.gto.basis.dzp_dunning module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.gto.basis/#module-pyscf.gto.basis.faegre_dz">pyscf.gto.basis.faegre_dz module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.gto.basis/#module-pyscf.gto.basis.iglo3">pyscf.gto.basis.iglo3 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.gto.basis/#module-pyscf.gto.basis.minao">pyscf.gto.basis.minao module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.gto.basis/#module-pyscf.gto.basis.parse_bfd_pp">pyscf.gto.basis.parse_bfd_pp module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.gto.basis/#module-pyscf.gto.basis.parse_gaussian">pyscf.gto.basis.parse_gaussian module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.gto.basis/#module-pyscf.gto.basis.parse_molpro">pyscf.gto.basis.parse_molpro module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.gto.basis/#module-pyscf.gto.basis.parse_nwchem">pyscf.gto.basis.parse_nwchem module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.gto.basis/#module-pyscf.gto.basis">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.gto/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.gto/#module-pyscf.gto.cmd_args">pyscf.gto.cmd_args module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.gto/#module-pyscf.gto.ecp">pyscf.gto.ecp module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.gto/#module-pyscf.gto.eval_gto">pyscf.gto.eval_gto module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.gto/#module-pyscf.gto.ft_ao">pyscf.gto.ft_ao module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.gto/#module-pyscf.gto.mole">pyscf.gto.mole module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.gto/#module-pyscf.gto.moleintor">pyscf.gto.moleintor module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.gto/#module-pyscf.gto.pp_int">pyscf.gto.pp_int module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.gto/#module-pyscf.gto">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.gw/">pyscf.gw package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.gw/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.gw/#module-pyscf.gw.gw">pyscf.gw.gw module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.gw/#module-pyscf.gw.gw_slow">pyscf.gw.gw_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.gw/#module-pyscf.gw">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.hci/">pyscf.hci package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.hci/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.hci/#module-pyscf.hci.hci">pyscf.hci.hci module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.hci/#module-pyscf.hci">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.hessian/">pyscf.hessian package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.hessian/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.hessian/#module-pyscf.hessian.rhf">pyscf.hessian.rhf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.hessian/#module-pyscf.hessian.rks">pyscf.hessian.rks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.hessian/#module-pyscf.hessian.thermo">pyscf.hessian.thermo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.hessian/#module-pyscf.hessian.uhf">pyscf.hessian.uhf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.hessian/#module-pyscf.hessian.uks">pyscf.hessian.uks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.hessian/#module-pyscf.hessian">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.lib/">pyscf.lib package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lib/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lib/#module-pyscf.lib.chkfile">pyscf.lib.chkfile module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lib/#module-pyscf.lib.diis">pyscf.lib.diis module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lib/#module-pyscf.lib.exceptions">pyscf.lib.exceptions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lib/#module-pyscf.lib.linalg_helper">pyscf.lib.linalg_helper module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lib/#module-pyscf.lib.logger">pyscf.lib.logger module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.lib/#log-level">Log level</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.lib/#timer">timer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lib/#module-pyscf.lib.misc">pyscf.lib.misc module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lib/#module-pyscf.lib.numpy_helper">pyscf.lib.numpy_helper module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lib/#module-pyscf.lib.parameters">pyscf.lib.parameters module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.lib/#scratch-directory">Scratch directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.lib/#maximum-memory">Maximum memory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lib/#pyscf-lib-tblis-einsum-module">pyscf.lib.tblis_einsum module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lib/#module-pyscf.lib">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.lo/">pyscf.lo package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lo/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lo/#module-pyscf.lo.boys">pyscf.lo.boys module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lo/#module-pyscf.lo.edmiston">pyscf.lo.edmiston module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lo/#module-pyscf.lo.iao">pyscf.lo.iao module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lo/#module-pyscf.lo.ibo">pyscf.lo.ibo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lo/#module-pyscf.lo.nao">pyscf.lo.nao module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lo/#module-pyscf.lo.orth">pyscf.lo.orth module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lo/#module-pyscf.lo.pipek">pyscf.lo.pipek module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lo/#module-pyscf.lo.vvo">pyscf.lo.vvo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.lo/#module-pyscf.lo">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.mcscf/">pyscf.mcscf package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.PiOS">pyscf.mcscf.PiOS module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.addons">pyscf.mcscf.addons module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.avas">pyscf.mcscf.avas module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.casci">pyscf.mcscf.casci module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.casci_symm">pyscf.mcscf.casci_symm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.chkfile">pyscf.mcscf.chkfile module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.df">pyscf.mcscf.df module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.dmet_cas">pyscf.mcscf.dmet_cas module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.mc1step">pyscf.mcscf.mc1step module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.mc1step_symm">pyscf.mcscf.mc1step_symm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.mc2step">pyscf.mcscf.mc2step module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.mc_ao2mo">pyscf.mcscf.mc_ao2mo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.newton_casscf">pyscf.mcscf.newton_casscf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.newton_casscf_symm">pyscf.mcscf.newton_casscf_symm module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.ucasci">pyscf.mcscf.ucasci module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.umc1step">pyscf.mcscf.umc1step module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.umc2step">pyscf.mcscf.umc2step module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf.umc_ao2mo">pyscf.mcscf.umc_ao2mo module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mcscf/#module-pyscf.mcscf">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.mp/">pyscf.mp package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mp/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mp/#module-pyscf.mp.dfmp2">pyscf.mp.dfmp2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mp/#module-pyscf.mp.gmp2">pyscf.mp.gmp2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mp/#module-pyscf.mp.mp2">pyscf.mp.mp2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mp/#module-pyscf.mp.mp2f12_slow">pyscf.mp.mp2f12_slow module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mp/#module-pyscf.mp.ump2">pyscf.mp.ump2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mp/#module-pyscf.mp">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.mrpt/">pyscf.mrpt package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mrpt/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mrpt/#module-pyscf.mrpt.nevpt2">pyscf.mrpt.nevpt2 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.mrpt/#module-pyscf.mrpt">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.pbc/">pyscf.pbc package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.pbc/#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.ao2mo/">pyscf.pbc.ao2mo package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.ao2mo/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.ao2mo/#module-pyscf.pbc.ao2mo.eris">pyscf.pbc.ao2mo.eris module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.ao2mo/#module-pyscf.pbc.ao2mo">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.cc/">pyscf.pbc.cc package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.ccsd">pyscf.pbc.cc.ccsd module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.eom_kccsd_ghf">pyscf.pbc.cc.eom_kccsd_ghf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.eom_kccsd_rhf">pyscf.pbc.cc.eom_kccsd_rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.eom_kccsd_rhf_ea">pyscf.pbc.cc.eom_kccsd_rhf_ea module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.eom_kccsd_rhf_ip">pyscf.pbc.cc.eom_kccsd_rhf_ip module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.eom_kccsd_uhf">pyscf.pbc.cc.eom_kccsd_uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.kccsd">pyscf.pbc.cc.kccsd module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.kccsd_rhf">pyscf.pbc.cc.kccsd_rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.kccsd_t">pyscf.pbc.cc.kccsd_t module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.kccsd_t_rhf">pyscf.pbc.cc.kccsd_t_rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.kccsd_t_rhf_slow">pyscf.pbc.cc.kccsd_t_rhf_slow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.kccsd_uhf">pyscf.pbc.cc.kccsd_uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.kintermediates">pyscf.pbc.cc.kintermediates module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.kintermediates_rhf">pyscf.pbc.cc.kintermediates_rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.kintermediates_uhf">pyscf.pbc.cc.kintermediates_uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc.kuccsd_rdm">pyscf.pbc.cc.kuccsd_rdm module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.cc/#module-pyscf.pbc.cc">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.ci/">pyscf.pbc.ci package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.ci/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.ci/#module-pyscf.pbc.ci.cisd">pyscf.pbc.ci.cisd module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.ci/#module-pyscf.pbc.ci.kcis_rhf">pyscf.pbc.ci.kcis_rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.ci/#module-pyscf.pbc.ci">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.df/">pyscf.pbc.df package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.aft">pyscf.pbc.df.aft module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.aft_ao2mo">pyscf.pbc.df.aft_ao2mo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.aft_jk">pyscf.pbc.df.aft_jk module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.df">pyscf.pbc.df.df module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.df_ao2mo">pyscf.pbc.df.df_ao2mo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.df_jk">pyscf.pbc.df.df_jk module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.fft">pyscf.pbc.df.fft module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.fft_ao2mo">pyscf.pbc.df.fft_ao2mo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.fft_jk">pyscf.pbc.df.fft_jk module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.ft_ao">pyscf.pbc.df.ft_ao module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.incore">pyscf.pbc.df.incore module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.mdf">pyscf.pbc.df.mdf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.mdf_ao2mo">pyscf.pbc.df.mdf_ao2mo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.mdf_jk">pyscf.pbc.df.mdf_jk module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df.outcore">pyscf.pbc.df.outcore module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.df/#module-pyscf.pbc.df">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.dft/">pyscf.pbc.dft package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.dft/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.dft/#module-pyscf.pbc.dft.cdft">pyscf.pbc.dft.cdft module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.dft/#module-pyscf.pbc.dft.gen_grid">pyscf.pbc.dft.gen_grid module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.dft/#module-pyscf.pbc.dft.krks">pyscf.pbc.dft.krks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.dft/#module-pyscf.pbc.dft.kroks">pyscf.pbc.dft.kroks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.dft/#module-pyscf.pbc.dft.kuks">pyscf.pbc.dft.kuks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.dft/#module-pyscf.pbc.dft.multigrid">pyscf.pbc.dft.multigrid module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.dft/#module-pyscf.pbc.dft.numint">pyscf.pbc.dft.numint module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.dft/#module-pyscf.pbc.dft.rks">pyscf.pbc.dft.rks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.dft/#module-pyscf.pbc.dft.roks">pyscf.pbc.dft.roks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.dft/#module-pyscf.pbc.dft.uks">pyscf.pbc.dft.uks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.dft/#module-pyscf.pbc.dft">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.eph/">pyscf.pbc.eph package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.eph/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.eph/#module-pyscf.pbc.eph.eph_fd">pyscf.pbc.eph.eph_fd module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.eph/#module-pyscf.pbc.eph">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.geomopt/">pyscf.pbc.geomopt package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.geomopt/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.geomopt/#pyscf-pbc-geomopt-geometric-solver-module">pyscf.pbc.geomopt.geometric_solver module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.geomopt/#module-pyscf.pbc.geomopt">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.grad/">pyscf.pbc.grad package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.grad/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.grad/#module-pyscf.pbc.grad.krhf">pyscf.pbc.grad.krhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.grad/#module-pyscf.pbc.grad.krks">pyscf.pbc.grad.krks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.grad/#module-pyscf.pbc.grad.kuhf">pyscf.pbc.grad.kuhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.grad/#module-pyscf.pbc.grad.kuks">pyscf.pbc.grad.kuks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.grad/#module-pyscf.pbc.grad">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.gto/">pyscf.pbc.gto package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.gto/#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.gto/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.gto/#module-pyscf.pbc.gto.cell">pyscf.pbc.gto.cell module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.gto/#module-pyscf.pbc.gto.ecp">pyscf.pbc.gto.ecp module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.gto/#module-pyscf.pbc.gto.eval_gto">pyscf.pbc.gto.eval_gto module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.gto/#module-pyscf.pbc.gto">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.gw/">pyscf.pbc.gw package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.gw/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.gw/#module-pyscf.pbc.gw.gw_slow">pyscf.pbc.gw.gw_slow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.gw/#module-pyscf.pbc.gw.kgw_slow">pyscf.pbc.gw.kgw_slow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.gw/#module-pyscf.pbc.gw.kgw_slow_supercell">pyscf.pbc.gw.kgw_slow_supercell module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.gw/#module-pyscf.pbc.gw">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.lib/">pyscf.pbc.lib package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.lib/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.lib/#module-pyscf.pbc.lib.arnoldi">pyscf.pbc.lib.arnoldi module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.lib/#module-pyscf.pbc.lib.chkfile">pyscf.pbc.lib.chkfile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.lib/#module-pyscf.pbc.lib.kpts_helper">pyscf.pbc.lib.kpts_helper module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.lib/#module-pyscf.pbc.lib.linalg_helper">pyscf.pbc.lib.linalg_helper module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.lib/#module-pyscf.pbc.lib">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.mp/">pyscf.pbc.mp package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mp/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mp/#module-pyscf.pbc.mp.kmp2">pyscf.pbc.mp.kmp2 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mp/#module-pyscf.pbc.mp.kump2">pyscf.pbc.mp.kump2 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mp/#module-pyscf.pbc.mp.mp2">pyscf.pbc.mp.mp2 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mp/#module-pyscf.pbc.mp">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.mpicc/">pyscf.pbc.mpicc package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mpicc/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mpicc/#pyscf-pbc-mpicc-kccsd-rhf-module">pyscf.pbc.mpicc.kccsd_rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mpicc/#pyscf-pbc-mpicc-kintermediates-rhf-module">pyscf.pbc.mpicc.kintermediates_rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mpicc/#module-pyscf.pbc.mpicc.mpi_kpoint_helper">pyscf.pbc.mpicc.mpi_kpoint_helper module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mpicc/#module-pyscf.pbc.mpicc">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.mpitools/">pyscf.pbc.mpitools package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mpitools/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mpitools/#pyscf-pbc-mpitools-mpi-module">pyscf.pbc.mpitools.mpi module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mpitools/#pyscf-pbc-mpitools-mpi-blksize-module">pyscf.pbc.mpitools.mpi_blksize module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mpitools/#pyscf-pbc-mpitools-mpi-helper-module">pyscf.pbc.mpitools.mpi_helper module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mpitools/#pyscf-pbc-mpitools-mpi-load-balancer-module">pyscf.pbc.mpitools.mpi_load_balancer module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mpitools/#pyscf-pbc-mpitools-mpi-pool-module">pyscf.pbc.mpitools.mpi_pool module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.mpitools/#module-pyscf.pbc.mpitools">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.prop/">pyscf.pbc.prop package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.prop/#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.prop/#module-pyscf.pbc.prop">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.scf/">pyscf.pbc.scf package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf.addons">pyscf.pbc.scf.addons module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf.chkfile">pyscf.pbc.scf.chkfile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf.cphf">pyscf.pbc.scf.cphf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf.ghf">pyscf.pbc.scf.ghf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf.hf">pyscf.pbc.scf.hf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf.kghf">pyscf.pbc.scf.kghf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf.khf">pyscf.pbc.scf.khf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf.krohf">pyscf.pbc.scf.krohf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf.kuhf">pyscf.pbc.scf.kuhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf.newton_ah">pyscf.pbc.scf.newton_ah module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf.rohf">pyscf.pbc.scf.rohf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf.scfint">pyscf.pbc.scf.scfint module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf.stability">pyscf.pbc.scf.stability module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf.uhf">pyscf.pbc.scf.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.scf/#module-pyscf.pbc.scf">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.tddft/">pyscf.pbc.tddft package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tddft/#module-pyscf.pbc.tddft">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.tdscf/">pyscf.pbc.tdscf package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#pyscf-pbc-tdscf-kproxy-module">pyscf.pbc.tdscf.kproxy module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf.kproxy_supercell">pyscf.pbc.tdscf.kproxy_supercell module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf.krhf">pyscf.pbc.tdscf.krhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf.krhf_slow">pyscf.pbc.tdscf.krhf_slow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf.krhf_slow_gamma">pyscf.pbc.tdscf.krhf_slow_gamma module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf.krhf_slow_supercell">pyscf.pbc.tdscf.krhf_slow_supercell module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf.krks">pyscf.pbc.tdscf.krks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf.kuhf">pyscf.pbc.tdscf.kuhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf.kuks">pyscf.pbc.tdscf.kuks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf.proxy">pyscf.pbc.tdscf.proxy module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf.rhf">pyscf.pbc.tdscf.rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf.rhf_slow">pyscf.pbc.tdscf.rhf_slow module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf.rks">pyscf.pbc.tdscf.rks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf.uhf">pyscf.pbc.tdscf.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf.uks">pyscf.pbc.tdscf.uks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tdscf/#module-pyscf.pbc.tdscf">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.tools/">pyscf.pbc.tools package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tools/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tools/#module-pyscf.pbc.tools.k2gamma">pyscf.pbc.tools.k2gamma module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tools/#module-pyscf.pbc.tools.lattice">pyscf.pbc.tools.lattice module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tools/#module-pyscf.pbc.tools.make_test_cell">pyscf.pbc.tools.make_test_cell module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tools/#module-pyscf.pbc.tools.pbc">pyscf.pbc.tools.pbc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tools/#pyscf-pbc-tools-pyscf-ase-module">pyscf.pbc.tools.pyscf_ase module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tools/#pyscf-pbc-tools-pywannier90-module">pyscf.pbc.tools.pywannier90 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tools/#module-pyscf.pbc.tools.tril">pyscf.pbc.tools.tril module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.tools/#module-pyscf.pbc.tools">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.pbc.x2c/">pyscf.pbc.x2c package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.x2c/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.x2c/#module-pyscf.pbc.x2c.sfx2c1e">pyscf.pbc.x2c.sfx2c1e module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.pbc.x2c/#module-pyscf.pbc.x2c">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.pbc/#module-pyscf.pbc">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.prop/">pyscf.prop package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.prop/#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.prop.efg/">pyscf.prop.efg package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.efg/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.efg/#module-pyscf.prop.efg.dhf">pyscf.prop.efg.dhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.efg/#module-pyscf.prop.efg.rhf">pyscf.prop.efg.rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.efg/#module-pyscf.prop.efg.uhf">pyscf.prop.efg.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.efg/#module-pyscf.prop.efg">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.prop.esr/">pyscf.prop.esr package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.esr/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.esr/#module-pyscf.prop.esr.uhf">pyscf.prop.esr.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.esr/#module-pyscf.prop.esr.uks">pyscf.prop.esr.uks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.esr/#module-pyscf.prop.esr">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.prop.freq/">pyscf.prop.freq package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.freq/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.freq/#module-pyscf.prop.freq.rhf">pyscf.prop.freq.rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.freq/#module-pyscf.prop.freq.rks">pyscf.prop.freq.rks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.freq/#module-pyscf.prop.freq.uhf">pyscf.prop.freq.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.freq/#module-pyscf.prop.freq.uks">pyscf.prop.freq.uks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.freq/#module-pyscf.prop.freq">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.prop.gtensor/">pyscf.prop.gtensor package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.gtensor/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.gtensor/#module-pyscf.prop.gtensor.dhf">pyscf.prop.gtensor.dhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.gtensor/#module-pyscf.prop.gtensor.uhf">pyscf.prop.gtensor.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.gtensor/#module-pyscf.prop.gtensor.uks">pyscf.prop.gtensor.uks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.gtensor/#module-pyscf.prop.gtensor">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.prop.hfc/">pyscf.prop.hfc package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.hfc/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.hfc/#module-pyscf.prop.hfc.dhf">pyscf.prop.hfc.dhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.hfc/#module-pyscf.prop.hfc.uhf">pyscf.prop.hfc.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.hfc/#module-pyscf.prop.hfc.uks">pyscf.prop.hfc.uks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.hfc/#module-pyscf.prop.hfc">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.prop.magnetizability/">pyscf.prop.magnetizability package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.magnetizability/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.magnetizability/#module-pyscf.prop.magnetizability.rhf">pyscf.prop.magnetizability.rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.magnetizability/#module-pyscf.prop.magnetizability.rks">pyscf.prop.magnetizability.rks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.magnetizability/#module-pyscf.prop.magnetizability.uhf">pyscf.prop.magnetizability.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.magnetizability/#module-pyscf.prop.magnetizability.uks">pyscf.prop.magnetizability.uks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.magnetizability/#module-pyscf.prop.magnetizability">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.prop.nmr/">pyscf.prop.nmr package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.nmr/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.nmr/#module-pyscf.prop.nmr.dhf">pyscf.prop.nmr.dhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.nmr/#module-pyscf.prop.nmr.rhf">pyscf.prop.nmr.rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.nmr/#module-pyscf.prop.nmr.rks">pyscf.prop.nmr.rks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.nmr/#module-pyscf.prop.nmr.uhf">pyscf.prop.nmr.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.nmr/#module-pyscf.prop.nmr.uks">pyscf.prop.nmr.uks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.nmr/#module-pyscf.prop.nmr">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.prop.nsr/">pyscf.prop.nsr package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.nsr/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.nsr/#module-pyscf.prop.nsr.rhf">pyscf.prop.nsr.rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.nsr/#module-pyscf.prop.nsr.rks">pyscf.prop.nsr.rks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.nsr/#module-pyscf.prop.nsr.uhf">pyscf.prop.nsr.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.nsr/#module-pyscf.prop.nsr.uks">pyscf.prop.nsr.uks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.nsr/#module-pyscf.prop.nsr">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.prop.polarizability/">pyscf.prop.polarizability package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.polarizability/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.polarizability/#module-pyscf.prop.polarizability.rhf">pyscf.prop.polarizability.rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.polarizability/#module-pyscf.prop.polarizability.rks">pyscf.prop.polarizability.rks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.polarizability/#module-pyscf.prop.polarizability.uhf">pyscf.prop.polarizability.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.polarizability/#module-pyscf.prop.polarizability.uks">pyscf.prop.polarizability.uks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.polarizability/#module-pyscf.prop.polarizability">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.prop.rotational_gtensor/">pyscf.prop.rotational_gtensor package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.rotational_gtensor/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.rotational_gtensor/#module-pyscf.prop.rotational_gtensor.rhf">pyscf.prop.rotational_gtensor.rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.rotational_gtensor/#module-pyscf.prop.rotational_gtensor.rks">pyscf.prop.rotational_gtensor.rks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.rotational_gtensor/#module-pyscf.prop.rotational_gtensor.uhf">pyscf.prop.rotational_gtensor.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.rotational_gtensor/#module-pyscf.prop.rotational_gtensor.uks">pyscf.prop.rotational_gtensor.uks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.rotational_gtensor/#module-pyscf.prop.rotational_gtensor">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.prop.ssc/">pyscf.prop.ssc package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.ssc/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.ssc/#module-pyscf.prop.ssc.dhf">pyscf.prop.ssc.dhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.ssc/#module-pyscf.prop.ssc.rhf">pyscf.prop.ssc.rhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.ssc/#module-pyscf.prop.ssc.rks">pyscf.prop.ssc.rks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.ssc/#module-pyscf.prop.ssc.uhf">pyscf.prop.ssc.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.ssc/#module-pyscf.prop.ssc.uks">pyscf.prop.ssc.uks module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.ssc/#module-pyscf.prop.ssc">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../pyscf.prop.zfs/">pyscf.prop.zfs package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.zfs/#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.zfs/#module-pyscf.prop.zfs.uhf">pyscf.prop.zfs.uhf module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../pyscf.prop.zfs/#module-pyscf.prop.zfs">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.prop/#module-pyscf.prop">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../pyscf.qmmm/">pyscf.qmmm package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.qmmm/#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.qmmm/#module-pyscf.qmmm.itrf">pyscf.qmmm.itrf module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.qmmm/#module-pyscf.qmmm.mm_mole">pyscf.qmmm.mm_mole module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pyscf.qmmm/#module-pyscf.qmmm">Module contents</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../pyscf.rt/">pyscf.rt package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pyscf.rt/#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../pyscf.rt/#module-pyscf.rt.tdfields">pyscf.rt.tdfields module</a></li>
@@ -527,12 +1258,12 @@ to try out the package:</p>
             </a>
           
           
-            <a href="../pyscf.rt/" title="pyscf.rt package"
+            <a href="../pyscf.adc/" title="pyscf.adc package"
                class="md-flex md-footer-nav__link md-footer-nav__link--next"
                rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
                 class="md-flex__ellipsis"> <span
-                class="md-footer-nav__direction"> Next </span> pyscf.rt package </span>
+                class="md-footer-nav__direction"> Next </span> pyscf.adc package </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink"><i
                 class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>

@@ -274,6 +274,7 @@ html_theme_options = {
     "github_button": False,
     "nav_title": "PySCF Docs",
     "color_primary": "indigo",
+    "color_accent": "yellow",
     "globaltoc_depth": 2,
     "nav_links": [
         {"href": "about", "title": "About", "internal": True},

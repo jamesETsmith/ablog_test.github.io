@@ -89,7 +89,7 @@
 
   </head>
   <body dir=ltr
-        data-md-color-primary=indigo data-md-color-accent=blue>
+        data-md-color-primary=indigo data-md-color-accent=yellow>
   
   <svg class="md-svg">
     <defs data-children-count="0">
@@ -923,6 +923,33 @@ envrionment.</p>
 </pre></div>
 </div>
 <dl class="py method">
+<dt id="pyscf.scf.dhf.DHF.EFG">
+<code class="sig-name descname">EFG</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.dhf.DHF.EFG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.dhf.DHF.Gradients">
+<code class="sig-name descname">Gradients</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.dhf.DHF.Gradients" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unrestricted Dirac-Hartree-Fock gradients</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.dhf.DHF.NMR">
+<code class="sig-name descname">NMR</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.dhf.DHF.NMR" title="Permalink to this definition">¶</a></dt>
+<dd><p>magnetic shielding constants</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.dhf.DHF.SSC">
+<code class="sig-name descname">SSC</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.dhf.DHF.SSC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.dhf.DHF.SpinSpinCoupling">
+<code class="sig-name descname">SpinSpinCoupling</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.dhf.DHF.SpinSpinCoupling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt id="pyscf.scf.dhf.DHF.analyze">
 <code class="sig-name descname">analyze</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.dhf.DHF.analyze" title="Permalink to this definition">¶</a></dt>
 <dd><p>Analyze the given SCF object:  print orbital energies, occupancies;
@@ -1424,7 +1451,7 @@ converge the SCF with the small component contributions (SS|SS)</p>
 <dl class="py class">
 <dt id="pyscf.scf.diis.ADIIS">
 <em class="property">class </em><code class="sig-prename descclassname">pyscf.scf.diis.</code><code class="sig-name descname">ADIIS</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dev</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">incore</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.diis.ADIIS" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pyscf.lib.diis.DIIS</span></code></p>
+<dd><p>Bases: <a class="reference internal" href="../pyscf.lib/#pyscf.lib.diis.DIIS" title="pyscf.lib.diis.DIIS"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyscf.lib.diis.DIIS</span></code></a></p>
 <p>Ref: JCP 132, 054109 (2010); DOI:10.1063/1.3304922</p>
 <dl class="py method">
 <dt id="pyscf.scf.diis.ADIIS.update">
@@ -1445,7 +1472,7 @@ vector to extrapolate the vector.</p>
 <dl class="py class">
 <dt id="pyscf.scf.diis.CDIIS">
 <em class="property">class </em><code class="sig-prename descclassname">pyscf.scf.diis.</code><code class="sig-name descname">CDIIS</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mf</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.diis.CDIIS" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pyscf.lib.diis.DIIS</span></code></p>
+<dd><p>Bases: <a class="reference internal" href="../pyscf.lib/#pyscf.lib.diis.DIIS" title="pyscf.lib.diis.DIIS"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyscf.lib.diis.DIIS</span></code></a></p>
 <dl class="py method">
 <dt id="pyscf.scf.diis.CDIIS.get_num_vec">
 <code class="sig-name descname">get_num_vec</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.diis.CDIIS.get_num_vec" title="Permalink to this definition">¶</a></dt>
@@ -1476,7 +1503,7 @@ vector to extrapolate the vector.</p>
 <dl class="py class">
 <dt id="pyscf.scf.diis.EDIIS">
 <em class="property">class </em><code class="sig-prename descclassname">pyscf.scf.diis.</code><code class="sig-name descname">EDIIS</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dev</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">filename</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">incore</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.diis.EDIIS" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pyscf.lib.diis.DIIS</span></code></p>
+<dd><p>Bases: <a class="reference internal" href="../pyscf.lib/#pyscf.lib.diis.DIIS" title="pyscf.lib.diis.DIIS"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyscf.lib.diis.DIIS</span></code></a></p>
 <p>SCF-EDIIS
 Ref: JCP 116, 8255 (2002); DOI:10.1063/1.1470195</p>
 <dl class="py method">
@@ -2893,6 +2920,23 @@ representation).</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt id="pyscf.scf.hf.RHF.EFG">
+<code class="sig-name descname">EFG</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.hf.RHF.EFG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.hf.RHF.Gradients">
+<code class="sig-name descname">Gradients</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.hf.RHF.Gradients" title="Permalink to this definition">¶</a></dt>
+<dd><p>Non-relativistic restricted Hartree-Fock gradients</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.hf.RHF.Hessian">
+<code class="sig-name descname">Hessian</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.hf.RHF.Hessian" title="Permalink to this definition">¶</a></dt>
+<dd><p>Non-relativistic restricted Hartree-Fock hessian</p>
+</dd></dl>
+
+<dl class="py method">
 <dt id="pyscf.scf.hf.RHF.MP2">
 <code class="sig-name descname">MP2</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.hf.RHF.MP2" title="Permalink to this definition">¶</a></dt>
 <dd><p>restricted MP2 with canonical HF and non-canonical HF reference</p>
@@ -2943,6 +2987,38 @@ occupied and virtual orbitals can be frozen in MP2 calculation.</p>
 </dl>
 </div></blockquote>
 </dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.hf.RHF.NMR">
+<code class="sig-name descname">NMR</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.hf.RHF.NMR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.hf.RHF.NSR">
+<code class="sig-name descname">NSR</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.hf.RHF.NSR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Nuclear-spin rotation tensors</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.hf.RHF.Polarizability">
+<code class="sig-name descname">Polarizability</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.hf.RHF.Polarizability" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.hf.RHF.RotationalGTensor">
+<code class="sig-name descname">RotationalGTensor</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.hf.RHF.RotationalGTensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>HF rotational g-tensors</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.hf.RHF.SSC">
+<code class="sig-name descname">SSC</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.hf.RHF.SSC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.hf.RHF.SpinSpinCoupling">
+<code class="sig-name descname">SpinSpinCoupling</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.hf.RHF.SpinSpinCoupling" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt id="pyscf.scf.hf.RHF.TDA">
@@ -3169,7 +3245,7 @@ internal stability and the second corresponds to the external stability.</p>
 <dl class="py class">
 <dt id="pyscf.scf.hf.SCF">
 <em class="property">class </em><code class="sig-prename descclassname">pyscf.scf.hf.</code><code class="sig-name descname">SCF</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mol</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.hf.SCF" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pyscf.lib.misc.StreamObject</span></code></p>
+<dd><p>Bases: <a class="reference internal" href="../pyscf.lib/#pyscf.lib.misc.StreamObject" title="pyscf.lib.misc.StreamObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyscf.lib.misc.StreamObject</span></code></a></p>
 <p>SCF base class.   non-relativistic RHF.</p>
 <dl>
 <dt>Attributes:</dt><dd><dl>
@@ -3316,6 +3392,49 @@ occupied and virtual orbitals can be frozen in CC calculation.</p>
 <dt id="pyscf.scf.hf.SCF.DIIS">
 <code class="sig-name descname">DIIS</code><a class="headerlink" href="#pyscf.scf.hf.SCF.DIIS" title="Permalink to this definition">¶</a></dt>
 <dd><p>alias of <a class="reference internal" href="#pyscf.scf.diis.CDIIS" title="pyscf.scf.diis.CDIIS"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyscf.scf.diis.CDIIS</span></code></a></p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.hf.SCF.QMMM">
+<code class="sig-name descname">QMMM</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">atoms_or_coords</span></em>, <em class="sig-param"><span class="n">charges</span></em>, <em class="sig-param"><span class="n">unit</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.hf.SCF.QMMM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Embedding the one-electron (non-relativistic) potential generated by MM
+point charges into QM Hamiltonian.</p>
+<p>The total energy includes the regular QM energy, the interaction between
+the nuclei in QM region and the MM charges, and the static Coulomb
+interaction between the electron density and the MM charges. It does not
+include the static Coulomb interactions of the MM point charges, the MM
+energy, the vdw interaction or other bonding/non-bonding effects between
+QM region and MM particles.</p>
+<dl>
+<dt>Args:</dt><dd><p>scf_method : a HF or DFT object</p>
+<dl class="simple">
+<dt>atoms_or_coords<span class="classifier">2D array, shape (N,3)</span></dt><dd><p>MM particle coordinates</p>
+</dd>
+<dt>charges<span class="classifier">1D array</span></dt><dd><p>MM particle charges</p>
+</dd>
+</dl>
+</dd>
+<dt>Kwargs:</dt><dd><dl class="simple">
+<dt>unit<span class="classifier">str</span></dt><dd><p>Bohr, AU, Ang (case insensitive). Default is the same to mol.unit</p>
+</dd>
+</dl>
+</dd>
+<dt>Returns:</dt><dd><p>Same method object as the input scf_method with modified 1e Hamiltonian</p>
+</dd>
+<dt>Note:</dt><dd><p>1. if MM charge and X2C correction are used together, function mm_charge
+needs to be applied after X2C decoration (.x2c method), eg
+mf = mm_charge(scf.RHF(mol).x2c()), [(0.5,0.6,0.8)], [-0.5]).
+2. Once mm_charge function is applied on the SCF object, it
+affects all the post-HF calculations eg MP2, CCSD, MCSCF etc</p>
+</dd>
+</dl>
+<p>Examples:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">mol</span> <span class="o">=</span> <span class="n">gto</span><span class="o">.</span><span class="n">M</span><span class="p">(</span><span class="n">atom</span><span class="o">=</span><span class="s1">&#39;H 0 0 0; F 0 0 1&#39;</span><span class="p">,</span> <span class="n">basis</span><span class="o">=</span><span class="s1">&#39;ccpvdz&#39;</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mf</span> <span class="o">=</span> <span class="n">mm_charge</span><span class="p">(</span><span class="n">dft</span><span class="o">.</span><span class="n">RKS</span><span class="p">(</span><span class="n">mol</span><span class="p">),</span> <span class="p">[(</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.6</span><span class="p">,</span><span class="mf">0.8</span><span class="p">)],</span> <span class="p">[</span><span class="o">-</span><span class="mf">0.3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mf</span><span class="o">.</span><span class="n">kernel</span><span class="p">()</span>
+<span class="go">-101.940495711284</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -3542,6 +3661,12 @@ basis defined by <code class="docutils literal notranslate"><span class="pre">mo
 <dt>Returns:</dt><dd><p>Density matrix, 2D ndarray</p>
 </dd>
 </dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.hf.SCF.from_fcidump">
+<code class="sig-name descname">from_fcidump</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">filename</span></em>, <em class="sig-param"><span class="n">molpro_orbsym</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.hf.SCF.from_fcidump" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update the SCF object with the quantities defined in FCIDUMP file</p>
 </dd></dl>
 
 <dl class="py method">
@@ -6569,6 +6694,17 @@ representation).</p>
 <code class="sig-name descname">DFMP2</code><em class="property"> = None</em><a class="headerlink" href="#pyscf.scf.rohf.ROHF.DFMP2" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
+<dl class="py method">
+<dt id="pyscf.scf.rohf.ROHF.EFG">
+<code class="sig-name descname">EFG</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.rohf.ROHF.EFG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.rohf.ROHF.Gradients">
+<code class="sig-name descname">Gradients</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.rohf.ROHF.Gradients" title="Permalink to this definition">¶</a></dt>
+<dd><p>Non-relativistic ROHF gradients</p>
+</dd></dl>
+
 <dl class="py attribute">
 <dt id="pyscf.scf.rohf.ROHF.MP2">
 <code class="sig-name descname">MP2</code><em class="property"> = None</em><a class="headerlink" href="#pyscf.scf.rohf.ROHF.MP2" title="Permalink to this definition">¶</a></dt>
@@ -7424,8 +7560,57 @@ envrionment.</p>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt id="pyscf.scf.uhf.UHF.EFG">
+<code class="sig-name descname">EFG</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.uhf.UHF.EFG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.uhf.UHF.Gradients">
+<code class="sig-name descname">Gradients</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.uhf.UHF.Gradients" title="Permalink to this definition">¶</a></dt>
+<dd><p>Non-relativistic unrestricted Hartree-Fock gradients</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.uhf.UHF.Hessian">
+<code class="sig-name descname">Hessian</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.uhf.UHF.Hessian" title="Permalink to this definition">¶</a></dt>
+<dd><p>Non-relativistic UHF hessian</p>
+</dd></dl>
+
+<dl class="py method">
 <dt id="pyscf.scf.uhf.UHF.MP2">
 <code class="sig-name descname">MP2</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.uhf.UHF.MP2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.uhf.UHF.NMR">
+<code class="sig-name descname">NMR</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.uhf.UHF.NMR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.uhf.UHF.NSR">
+<code class="sig-name descname">NSR</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.uhf.UHF.NSR" title="Permalink to this definition">¶</a></dt>
+<dd><p>Nuclear-spin rotation tensors for UHF</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.uhf.UHF.Polarizability">
+<code class="sig-name descname">Polarizability</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.uhf.UHF.Polarizability" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.uhf.UHF.RotationalGTensor">
+<code class="sig-name descname">RotationalGTensor</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.uhf.UHF.RotationalGTensor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rotational g-tensors for UHF</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.uhf.UHF.SSC">
+<code class="sig-name descname">SSC</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.uhf.UHF.SSC" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyscf.scf.uhf.UHF.SpinSpinCoupling">
+<code class="sig-name descname">SpinSpinCoupling</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyscf.scf.uhf.UHF.SpinSpinCoupling" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
