@@ -1,4 +1,5 @@
 #!/bin/bash
 
-rm -r docs
+# rm -rf docs
 mv _website docs
+touch docs/.nojekyll
